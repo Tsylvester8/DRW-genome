@@ -1,0 +1,618 @@
+IQ-TREE 2.1.3 COVID-edition built Apr 21 2021
+
+Input file name: GH45.aln
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 469358
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 175 sequences with 383 amino-acid sites
+Number of constant sites: 137 (= 35.7702% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 137 (= 35.7702% of all sites)
+Number of parsimony informative sites: 200
+Number of distinct site patterns: 299
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: WAG+F+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+WAG+F+R4         -22668.220   46080.440 +    0.706   73831.640 -        0   47549.109 +    0.992
+WAG+F+R5         -22667.097   46082.194 +    0.294   81144.694 -        0   47558.759 -  0.00796
+PMB+F+R4         -22703.794   46151.588 - 2.51e-16   73902.788 -        0   47620.257 - 3.52e-16
+PMB+F+R5         -22703.390   46154.781 - 5.08e-17   81217.281 -        0   47631.346 - 1.38e-18
+Blosum62+F+R4    -22710.405   46164.809 - 3.38e-19   73916.009 -        0   47633.478 - 4.74e-19
+Blosum62+F+R5    -22708.727   46165.453 - 2.45e-19   81227.953 -        0   47642.018 - 6.63e-21
+VT+F+R4          -22779.420   46302.840 - 3.59e-49   74054.040 -        0   47771.509 - 5.04e-49
+VT+F+R5          -22777.878   46303.755 - 2.27e-49   81366.255 -        0   47780.320 - 6.16e-51
+DCMut+F+R6       -22981.150   46714.299 - 1.61e-138   93964.966 -        0   48198.760 - 8.44e-142
+DCMut+F+R5       -22988.657   46725.314 - 6.55e-141   81787.814 -        0   48201.879 - 1.77e-142
+Dayhoff+F+R6     -22984.155   46720.310 -   8e-140   93970.977 -        0   48204.771 - 4.18e-143
+Dayhoff+F+R5     -22991.751   46731.501 - 2.97e-142   81794.001 -        0   48208.066 - 8.05e-144
+DCMut+F+R4       -23003.959   46751.918 - 1.09e-146   74503.118 -        0   48220.587 - 1.54e-146
+LG+F+R5          -23000.512   46749.024 - 4.65e-146   81811.524 -        0   48225.589 - 1.26e-147
+Dayhoff+F+R4     -23007.209   46758.418 - 4.25e-148   74509.618 -        0   48227.087 - 5.96e-148
+Q.pfam+F+R6      -22996.533   46745.066 - 3.37e-145   93995.733 -        0   48229.527 - 1.76e-148
+FLU+F+R4         -23009.018   46762.036 - 6.95e-149   74513.236 -        0   48230.705 - 9.77e-149
+LG+F+R6          -22998.211   46748.422 - 6.29e-146   93999.089 -        0   48232.883 - 3.29e-149
+LG+F+R4          -23010.865   46765.729 - 1.1e-149   74516.929 -        0   48234.398 - 1.54e-149
+FLU+F+R5         -23008.085   46764.170 - 2.39e-149   81826.670 -        0   48240.735 - 6.48e-151
+Q.pfam+F+R5      -23008.386   46764.772 - 1.77e-149   81827.272 -        0   48241.337 - 4.8e-151
+Q.pfam+F+R4      -23015.508   46775.015 - 1.06e-151   74526.215 -        0   48243.684 - 1.48e-151
+JTTDCMut+F+R5    -23047.456   46842.911 - 1.91e-166   81905.411 -        0   48319.477 - 5.17e-168
+JTTDCMut+F+R4    -23054.074   46852.147 - 1.88e-168   74603.347 -        0   48320.816 - 2.64e-168
+JTTDCMut+F+R6    -23043.732   46839.463 - 1.07e-165   94090.130 -        0   48323.924 - 5.59e-169
+WAG+R4           -23114.876   46935.751 - 1.32e-186   55553.820 - 4.11e-213   48329.407 - 3.6e-170
+cpREV+F+R5       -23054.558   46857.117 - 1.57e-169   81919.617 -        0   48333.682 - 4.25e-171
+cpREV+F+R6       -23048.689   46849.379 - 7.52e-168   94100.045 -        0   48333.840 - 3.93e-171
+WAG+R5           -23114.739   46939.478 - 2.05e-187   56300.960 -        0   48341.031 - 1.08e-172
+cpREV+F+R4       -23065.702   46875.405 - 1.68e-173   74626.605 -        0   48344.074 - 2.36e-173
+JTT+F+R5         -23075.164   46898.327 - 1.77e-178   81960.827 -        0   48374.893 - 4.78e-180
+JTT+F+R4         -23081.971   46907.942 - 1.44e-180   74659.142 -        0   48376.611 - 2.03e-180
+JTT+F+R6         -23071.784   46895.568 - 7.02e-178   94146.234 -        0   48380.029 - 3.67e-181
+rtREV+F+R5       -23087.699   46923.397 - 6.35e-184   81985.897 -        0   48399.963 - 1.72e-185
+rtREV+F+R4       -23095.700   46935.399 - 1.57e-186   74686.599 -        0   48404.068 - 2.21e-186
+rtREV+F+R6       -23087.237   46926.474 - 1.36e-184   94177.140 -        0   48410.935 - 7.14e-188
+Q.pfam+R5        -23266.560   47243.120 - 2.38e-253   56604.602 -        0   48644.672 - 1.25e-238
+Q.pfam+R6        -23264.100   47242.200 - 3.77e-253   57466.680 -        0   48651.648 - 3.83e-240
+Q.pfam+R4        -23280.641   47267.282 - 1.35e-258   55885.351 - 4.2e-285   48660.938 - 3.68e-242
+Q.yeast+F+R6     -23242.673   47237.346 - 4.27e-252   94488.012 -        0   48721.807 - 2.23e-255
+Q.yeast+F+R5     -23261.643   47271.285 - 1.82e-259   82333.785 -        0   48747.850 - 4.93e-261
+VT+R4            -23325.861   47357.723 - 3.09e-278   55975.792 - 9.65e-305   48751.379 - 8.45e-262
+VT+R5            -23320.690   47351.379 - 7.38e-277   56712.861 -        0   48752.932 - 3.89e-262
+Q.yeast+F+R4     -23273.744   47291.487 - 7.47e-264   75042.687 -        0   48760.156 - 1.05e-263
+LG+R5            -23327.007   47364.014 - 1.33e-279   56725.495 -        0   48765.566 - 7.02e-265
+LG+R4            -23334.900   47375.800 - 3.67e-282   55993.869 - 1.15e-308   48769.456 -   1e-265
+LG+R6            -23325.836   47365.672 - 5.81e-280   57590.152 -        0   48775.120 - 5.91e-267
+LG+I+G4          -23355.460   47408.921 - 2.36e-289   54811.951 - 5.12e-52   48786.785 - 1.73e-269
+Q.insect+F+R6    -23276.030   47304.059 - 1.39e-266   94554.726 -        0   48788.521 - 7.27e-270
+Q.insect+F+R5    -23288.553   47325.106 - 3.74e-271   82387.606 -        0   48801.671 - 1.01e-272
+LG+G4            -23367.756   47431.512 - 2.93e-294   54575.748 +        1   48805.429 - 1.55e-273
+LG+R3            -23368.714   47439.428 - 5.6e-296   55410.525 - 5.38e-182   48825.188 - 7.93e-278
+DCMut+R5         -23357.861   47425.723 - 5.3e-293   56787.204 -        0   48827.275 - 2.79e-278
+Dayhoff+R5       -23358.298   47426.595 - 3.43e-293   56788.077 -        0   48828.148 - 1.81e-278
+DCMut+R4         -23364.261   47434.523 - 6.51e-295   56052.592 - 2.03e-321   48828.179 - 1.78e-278
+Q.insect+F+R4    -23308.034   47360.067 - 9.58e-279   75111.267 -        0   48828.736 - 1.35e-278
+Dayhoff+R4       -23364.766   47435.531 - 3.93e-295   56053.600 - 1.23e-321   48829.187 - 1.07e-278
+DCMut+R6         -23354.070   47422.141 - 3.18e-292   57646.621 -        0   48831.589 - 3.23e-279
+Dayhoff+R6       -23354.495   47422.989 - 2.08e-292   57647.469 -        0   48832.438 - 2.11e-279
+Blosum62+R4      -23416.136   47538.273 - 1.93e-317   56156.342 -        0   48931.929 - 5.26e-301
+Blosum62+R5      -23410.572   47531.144 - 6.8e-316   56892.626 -        0   48932.696 - 3.58e-301
+Q.yeast+R5       -23419.682   47549.363 - 7.52e-320   56910.845 -        0   48950.916 - 3.96e-305
+Q.yeast+R6       -23417.309   47548.618 - 1.09e-319   57773.098 -        0   48958.066 - 1.11e-306
+PMB+R5           -23435.944   47581.887 -        0   56943.369 -        0   48983.440 - 3.43e-312
+Q.yeast+R4       -23442.986   47591.973 -        0   56210.041 -        0   48985.629 - 1.15e-312
+PMB+R4           -23444.430   47594.860 -        0   56212.929 -        0   48988.517 - 2.71e-313
+PMB+R6           -23435.836   47585.671 -        0   57810.151 -        0   48995.120 - 9.98e-315
+JTTDCMut+R4      -23505.752   47717.503 -        0   56335.572 -        0   49111.160 -        0
+JTTDCMut+R5      -23505.251   47720.503 -        0   57081.984 -        0   49122.055 -        0
+LG+R2            -23534.834   47767.668 -        0   55170.699 - 6.43e-130   49145.532 -        0
+Q.insect+R5      -23517.590   47745.180 -        0   57106.662 -        0   49146.733 -        0
+Q.insect+R6      -23515.496   47744.992 -        0   57969.472 -        0   49154.440 -        0
+JTT+R4           -23529.462   47764.925 -        0   56382.994 -        0   49158.581 -        0
+Q.insect+R4      -23533.632   47773.265 -        0   56391.334 -        0   49166.921 -        0
+JTT+R5           -23528.977   47767.954 -        0   57129.436 -        0   49169.507 -        0
+mtREV+F+R5       -23477.457   47702.913 -        0   82765.413 -        0   49179.478 -        0
+mtREV+F+R6       -23475.782   47703.565 -        0   94954.231 -        0   49188.026 -        0
+mtREV+F+R4       -23507.103   47758.206 -        0   75509.406 -        0   49226.875 -        0
+Q.plant+F+R6     -23527.030   47806.061 -        0   95056.728 -        0   49290.522 -        0
+Q.plant+F+R5     -23534.060   47816.119 -        0   82878.619 -        0   49292.684 -        0
+Q.plant+F+R4     -23555.901   47855.802 -        0   75607.002 -        0   49324.471 -        0
+cpREV+R4         -23709.412   48124.824 -        0   56742.893 -        0   49518.481 -        0
+cpREV+R5         -23703.882   48117.764 -        0   57479.246 -        0   49519.317 -        0
+mtInv+F+R6       -23649.639   48051.277 -        0   95301.944 -        0   49535.738 -        0
+mtInv+F+R5       -23662.183   48072.366 -        0   83134.866 -        0   49548.932 -        0
+Q.mammal+F+R6    -23663.219   48078.437 -        0   95329.104 -        0   49562.898 -        0
+Q.mammal+F+R5    -23672.048   48092.095 -        0   83154.595 -        0   49568.660 -        0
+Q.mammal+F+R4    -23683.864   48111.729 -        0   75862.929 -        0   49580.398 -        0
+mtInv+F+R4       -23685.401   48114.802 -        0   75866.002 -        0   49583.471 -        0
+Q.plant+R6       -23765.528   48245.056 -        0   58469.536 -        0   49654.504 -        0
+Q.plant+R5       -23771.647   48253.294 -        0   57614.775 -        0   49654.846 -        0
+Q.plant+R4       -23791.142   48288.284 -        0   56906.353 -        0   49681.941 -        0
+rtREV+R5         -23793.777   48297.554 -        0   57659.036 -        0   49699.107 -        0
+rtREV+R6         -23788.921   48291.843 -        0   58516.323 -        0   49701.291 -        0
+rtREV+R4         -23804.702   48315.405 -        0   56933.474 -        0   49709.061 -        0
+FLU+R5           -23803.020   48316.039 -        0   57677.521 -        0   49717.592 -        0
+FLU+R4           -23809.575   48325.150 -        0   56943.219 -        0   49718.806 -        0
+FLU+R6           -23800.821   48315.642 -        0   58540.122 -        0   49725.090 -        0
+HIVb+F+R5        -23750.645   48249.289 -        0   83311.789 -        0   49725.854 -        0
+HIVb+F+R6        -23749.003   48250.006 -        0   95500.673 -        0   49734.467 -        0
+HIVb+F+R4        -23765.419   48274.837 -        0   76026.037 -        0   49743.506 -        0
+HIVw+F+R4        -23835.100   48414.200 -        0   76165.400 -        0   49882.869 -        0
+HIVw+F+R5        -23829.222   48406.445 -        0   83468.945 -        0   49883.010 -        0
+mtMet+F+R5       -23894.747   48537.494 -        0   83599.994 -        0   50014.059 -        0
+mtMet+F+R6       -23894.658   48541.315 -        0   95791.982 -        0   50025.776 -        0
+mtMet+F+R4       -23919.548   48583.097 -        0   76334.297 -        0   50051.766 -        0
+mtZOA+F+R6       -23943.584   48639.167 -        0   95889.834 -        0   50123.628 -        0
+mtZOA+F+R5       -23952.907   48653.813 -        0   83716.313 -        0   50130.378 -        0
+Q.bird+F+R6      -23965.533   48683.065 -        0   95933.732 -        0   50167.527 -        0
+Q.bird+F+R5      -23974.155   48696.310 -        0   83758.810 -        0   50172.875 -        0
+Q.mammal+R5      -24030.909   48771.818 -        0   58133.300 -        0   50173.371 -        0
+Q.mammal+R6      -24027.618   48769.235 -        0   58993.715 -        0   50178.684 -        0
+Q.bird+F+R4      -23987.489   48718.979 -        0   76470.179 -        0   50187.648 -        0
+Q.mammal+R4      -24044.984   48795.968 -        0   57414.037 -        0   50189.625 -        0
+mtZOA+F+R4       -23998.111   48740.221 -        0   76491.421 -        0   50208.890 -        0
+mtVer+F+R6       -24066.252   48884.504 -        0   96135.171 -        0   50368.965 -        0
+mtVer+F+R5       -24076.856   48901.712 -        0   83964.212 -        0   50378.277 -        0
+mtVer+F+R4       -24106.721   48957.443 -        0   76708.643 -        0   50426.112 -        0
+mtMAM+F+R5       -24274.259   49296.518 -        0   84359.018 -        0   50773.083 -        0
+mtMAM+F+R6       -24269.546   49291.092 -        0   96541.758 -        0   50775.553 -        0
+Q.bird+R5        -24339.660   49389.320 -        0   58750.801 -        0   50790.872 -        0
+Q.bird+R6        -24337.394   49388.787 -        0   59613.267 -        0   50798.236 -        0
+Q.bird+R4        -24353.917   49413.833 -        0   58031.902 -        0   50807.490 -        0
+mtMAM+F+R4       -24302.674   49349.348 -        0   77100.548 -        0   50818.017 -        0
+LG+I             -24400.718   49497.436 -        0   56641.671 -        0   50871.352 -        0
+mtART+F+R6       -24325.081   49402.161 -        0   96652.828 -        0   50886.622 -        0
+mtART+F+R5       -24331.292   49410.584 -        0   84473.084 -        0   50887.149 -        0
+mtART+F+R4       -24382.253   49508.505 -        0   77259.705 -        0   50977.174 -        0
+HIVb+R4          -24502.232   49710.465 -        0   58328.534 -        0   51104.121 -        0
+HIVb+R5          -24499.623   49709.246 -        0   59070.728 -        0   51110.799 -        0
+LG               -24563.242   49820.484 -        0   56720.827 -        0   51190.452 -        0
+mtZOA+R6         -24726.214   50166.429 -        0   60390.909 -        0   51575.877 -        0
+mtZOA+R5         -24752.006   50214.011 -        0   59575.493 -        0   51615.564 -        0
+mtZOA+R4         -24772.590   50251.180 -        0   58869.249 -        0   51644.837 -        0
+mtInv+R5         -24939.980   50589.959 -        0   59951.441 -        0   51991.512 -        0
+mtInv+R6         -24939.711   50593.421 -        0   60817.901 -        0   52002.870 -        0
+mtInv+R4         -24958.251   50622.502 -        0   59240.571 -        0   52016.158 -        0
+mtREV+R5         -25016.885   50743.769 -        0   60105.251 -        0   52145.322 -        0
+mtREV+R6         -25013.414   50740.828 -        0   60965.308 -        0   52150.277 -        0
+mtREV+R4         -25028.645   50763.290 -        0   59381.359 -        0   52156.946 -        0
+mtMet+R4         -25040.097   50786.194 -        0   59404.263 -        0   52179.851 -        0
+mtMet+R5         -25035.870   50781.740 -        0   60143.222 -        0   52183.293 -        0
+HIVw+R4          -25120.002   50946.004 -        0   59564.073 -        0   52339.661 -        0
+HIVw+R5          -25116.815   50943.630 -        0   60305.112 -        0   52345.183 -        0
+mtART+R6         -25312.332   51338.663 -        0   61563.143 -        0   52748.112 -        0
+mtART+R5         -25340.324   51390.648 -        0   60752.129 -        0   52792.200 -        0
+mtVer+R6         -25345.407   51404.814 -        0   61629.294 -        0   52814.263 -        0
+mtVer+R5         -25357.405   51424.810 -        0   60786.291 -        0   52826.362 -        0
+mtART+R4         -25367.128   51440.257 -        0   60058.326 -        0   52833.913 -        0
+mtVer+R4         -25372.571   51451.141 -        0   60069.210 -        0   52844.798 -        0
+mtMAM+R6         -25924.331   52562.661 -        0   62787.141 -        0   53972.110 -        0
+mtMAM+R5         -25938.799   52587.598 -        0   61949.080 -        0   53989.151 -        0
+mtMAM+R4         -25965.917   52637.835 -        0   61255.904 -        0   54031.491 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: WAG+F+R4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0932
+  pi(R) = 0.0270
+  pi(N) = 0.0710
+  pi(D) = 0.0735
+  pi(C) = 0.0861
+  pi(Q) = 0.0066
+  pi(E) = 0.0054
+  pi(G) = 0.1667
+  pi(H) = 0.0130
+  pi(I) = 0.0039
+  pi(L) = 0.0054
+  pi(K) = 0.0457
+  pi(M) = 0.0193
+  pi(F) = 0.0050
+  pi(P) = 0.0051
+  pi(S) = 0.1159
+  pi(T) = 0.0980
+  pi(W) = 0.0369
+  pi(Y) = 0.0395
+  pi(V) = 0.0830
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.1706,0.1107) (0.1789,0.4087) (0.2997,0.9231) (0.3508,1.7996)
+
+ Category  Relative_rate  Proportion
+  1         0.1107         0.1706
+  2         0.4087         0.1789
+  3         0.9231         0.2997
+  4         1.7996         0.3508
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -22503.1436 (s.e. 1436.7340)
+Unconstrained log-likelihood (without tree): -2003.5323
+Number of free parameters (#branches + #model parameters): 372
+Akaike information criterion (AIC) score: 45750.2871
+Corrected Akaike information criterion (AICc) score: 73501.4871
+Bayesian information criterion (BIC) score: 47218.9562
+
+Total tree length (sum of branch lengths): 43.5151
+Sum of internal branch lengths: 17.0822 (39.2559% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.0026) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AAR22385_Apriona_germari_Insecta_Coleoptera_Cerambycidae_Apriona' is drawn at root
+
++--AAR22385_Apriona_germari_Insecta_Coleoptera_Cerambycidae_Apriona
+|
+|                                                               +----ABW39314_uncuItured_bacterium_Eyun_etal_2014_Bacteria
+|                                                       +-------|
+|                                                       |       +-----ABW39315_uncuItured_bacterium_Eyun_etal_2014_Bacteria
+|                                                  +----|
+|                                                  |    |          +------WP_006970736_Piesiocystis_pacifica_Eyun_etal_2014_Bacteria
+|                                                  |    |   +------|
+|                                                  |    |   |      |  +---YP_001980898_CeIIvibrio_japonicus_Eyun_etal_2014_Bacteria
+|                                                  |    |   |      +--|
+|                                                  |    |   |         +--YP_00307238_Teredinibacter_turnerae_Eyun_etal_2014_Bacteria
+|                                                  |    +---|
+|                                                  |        +-------------YP_003249505_Fibrobacter_succinogenes_subsp_succinogenes_Eyun_etal_2014_Bacteria
+|                                               +--|
+|                                               |  |  +--AFD53063_BursapheIenchus_mucronatus_Eyun_etal_2014_Nematoda
+|                                               |  +--|
+|                                               |     +--BAD34546_Bursaphelenchus_xylophilus_Eyun_etal_2014_Nematoda
+|                                            +--|
+|                                            |  |  +--ACM44321_Bursaphelenchus_xylophilus_Eyun_etal_2014_Nematoda
+|                                            |  +--|
+|                                            |     +--BAD34544_Bursaphelenchus_xylophilus_Eyun_etal_2014_Nematoda
+|                                         +--|
+|                                         |  |  +--AHW52290_Neocosmospora_spN14_Fungi
+|                                         |  +--|
+|                                         |     |     +--AHW52293_TruncateIIa_spT103_Fungi
+|                                         |     |  +--|
+|                                         |     |  |  +--AHW52312_PestaIotiopsis_gIandicoIa_Fungi
+|                                         |     +--|
+|                                         |        +--AHW52307_TubercuIaria_vuIgaris_Fungi
+|                                      +--|
+|                                      |  |                             +--AHW52286_Septotinia_popuIiperda_Fungi
+|                                      |  |                          +--|
+|                                      |  |                          |  +--AHW52302_Ciborinia_cameIIiae_Fungi
+|                                      |  |                       +--|
+|                                      |  |                       |  +--AHW52316_Botrytis_cinerea_Fungi
+|                                      |  |                    +--|
+|                                      |  |                    |  +---AHW52317_LachneIIuIa_sp01G12L52_Fungi
+|                                      |  |                 +--|
+|                                      |  |                 |  +--AHW52297_Rhizina_unduIata_Fungi
+|                                      |  |              +--|
+|                                      |  |              |  |  +--AHW52298_ScIerotinia_scIerotiorum_Fungi
+|                                      |  |              |  +--|
+|                                      |  |              |     +--AHW52304_GremmenieIIa_pinicoIa_Fungi
+|                                      |  |           +--|
+|                                      |  |           |  |  +---AHW52301_PateIIina_spP101_Fungi
+|                                      |  |           |  +--|
+|                                      |  |           |     +--EME46279_Dothistroma_septosporum_Eyun_etal_2014_Fungi
+|                                      |  |        +--|
+|                                      |  |        |  +--AHW52313_Cryptosporiopsis_spT61_Fungi
+|                                      |  |     +--|
+|                                      |  |     |  +--AHW52295_Chaetomium_spCh1_Fungi
+|                                      |  |  +--|
+|                                      |  |  |  +--AHW52299_Macrosporium_spM71_Fungi
+|                                      |  +--|
+|                                      |     |        +**AHW52291_Epicoccum_spP220_Fungi
+|                                      |     |     +--|
+|                                      |     |     |  +--AHW52310_MycosphaereIIa_sojae_Fungi
+|                                      |     |  +--|
+|                                      |     |  |  |              +**AHW52292_MeIanomma_spR51_Fungi
+|                                      |     |  |  |           +--|
+|                                      |     |  |  |           |  +----------------EIW52933_Trametes_versicoIor_Eyun_etal_2014_Fungi
+|                                      |     |  |  |        +--|
+|                                      |     |  |  |        |  +--AHW52305_Metasphaeria_spM111_Fungi
+|                                      |     |  |  |     +--|
+|                                      |     |  |  |     |  +--AHW52309_Neocucurbitaria_cava_Fungi
+|                                      |     |  |  |  +--|
+|                                      |     |  |  |  |  +**AHW52296_PhyIIosticta_aIcides_Fungi
+|                                      |     |  |  +--|
+|                                      |     |  |     +--AHW52294_Paraphoma_spZ1_Fungi
+|                                      |     +--|
+|                                      |        +----AHW52306_NeopestaIotiopsis_foedans_Fungi
+|                                   +--|
+|                                   |  +----ACV50414_Cryptopygus_antarcticus_Eyun_etal_2014_Insecta_Collembola
+|                                +--|
+|                                |  +-------YP_007359081_Myxococcus_stipitatus_Eyun_etal_2014_Bacteria
+|                             +--|
+|                             |  |           +--BAA98039_ReticuIitermes_speratus_hindgut_protist_Eyun_etal_2014_Protista
+|                             |  |        +--|
+|                             |  |        |  |  +--BAA98041_ReticuIitermes_speratus_hindgut_protist_Eyun_etal_2014_Protista
+|                             |  |        |  +--|
+|                             |  |        |     |  +--BAA98045_ReticuIitermes_speratus_hindgut_protist_Eyun_etal_2014_Protista
+|                             |  |        |     +--|
+|                             |  |        |        +--BAF57323_symbiotic_protist_of_ReticuIitermes_speratus_Eyun_etal_2014_Protista
+|                             |  |     +--|
+|                             |  |     |  +--BAA98048_ReticuIitermes_speratus_hindgut_protist_Eyun_etal_2014_Protista
+|                             |  |  +--|
+|                             |  |  |  +----------BAF57441_symbiotic_protist_of_Mastotermes_darwiniensis_Eyun_etal_2014_Protista
+|                             |  +--|
+|                             |     |  +---BAF57356_symbiotic_protist_of_Hodotermopsis_sjoestedti_Eyun_etal_2014_Protista
+|                             |     +--|
+|                             |        +---BAF57479_symbiotic_protist_of_Cryptocercus_punctuIatus_Eyun_etal_2014_Protista
+|                          +--|
+|                          |  +----XP_002494081_KomagataeIIa_phaffii_Eyun_etal_2014_Fungi
+|                       +--|
+|                       |  +------CAB92325_Piromyces_equi_Eyun_etal_2014_Fungi
+|                    +--|
+|                    |  |          +--GH45_100_Sitophilus_fass6476L117530a177I778transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                    |  |     +----|
+|                    |  |     |    +--GH45_98_Sitophilus_fasC260463a550I738transIate2_Current_Insecta_Coleoptera_Curculionidae
+|                    |  |  +--|
+|                    |  |  |  +--GH45_101_Sitophilus_fass6737L126300a637I801transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                    |  +--|
+|                    |     |                    +--GH45_41_Dendroctonus_fasDMPC14629260transIate2_Current_Insecta_Coleoptera_Curculionidae
+|                    |     |                 +--|
+|                    |     |                 |  +--GH45_43_Dendroctonus_fasDMPC14942863transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                    |     |              +--|
+|                    |     |              |  +--GH45_47_Dendroctonus_fasDMPC14946979transIate2_Current_Insecta_Coleoptera_Curculionidae
+|                    |     |           +--|
+|                    |     |           |  +--GH45_80_Pycnomerus_fass7849L118420a727I927revcomptransIate3_Current_Insecta_Coleoptera_Zopheridae
+|                    |     |        +--|
+|                    |     |        |  |  +--GH45_65_Ips_fass50L530a213I693revcomptransIate2_Current_Insecta_Coleoptera_Curculionidae
+|                    |     |        |  +--|
+|                    |     |        |     +--GH45_66_Ips_fass871L15550a708I866transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                    |     |     +--|
+|                    |     |     |  |        +**GH45_57_Diaprepes_fass12055L251170a203I737revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae
+|                    |     |     |  |  +-----|
+|                    |     |     |  |  |     |         +--anno1.g31604.t1
+|                    |     |     |  |  |     |      +--|
+|                    |     |     |  |  |     |      |  +--anno2.g40770.t1
+|                    |     |     |  |  |     |  +---|
+|                    |     |     |  |  |     |  |   +--anno1.g31609.t1
+|                    |     |     |  |  |     +--|
+|                    |     |     |  |  |        +--anno1.g31608.t1
+|                    |     |     |  +--|
+|                    |     |     |     +--GH45_70_Larinus_fasC134187a260I854revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                    |     |  +--|
+|                    |     |  |  +--GH45_84_Curculio_fasC149720a640I781revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                    |     +--|
+|                    |        |  +--GH45_95_Oxoplatypus_fass6132L171950a381I1771revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae
+|                    |        +--|
+|                    |           +--GH45_96_Oxoplatypus_fass6133L171951a365I832revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 +--|
+|                 |  |                                    +--ADU33334_Gastrophysa_viriduIa_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae_Gastrophysa
+|                 |  |                                 +--|
+|                 |  |                                 |  +--CCJ09455_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae
+|                 |  |                          +------|
+|                 |  |                          |      |  +----GH45_28_Oreina_fasC114158a550I730transIate1_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |                          |      +--|
+|                 |  |                          |         +--GH45_30_Oreina_fasC116389a530I790transIate3_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |                       +--|
+|                 |  |                       |  |  +--GH45_5_Agnesiotis_fasC108229a520I884revcomptransIate2_Current_Insecta_Coleoptera_Belidae
+|                 |  |                       |  +--|
+|                 |  |                       |     +-----GH45_7_Agnesiotis_fass6062L258050a601I875transIate3_Current_Insecta_Coleoptera_Belidae
+|                 |  |                    +--|
+|                 |  |                    |  +------GH45_6_Agnesiotis_fass1093L12620a691I796revcomptransIate3_Current_Insecta_Coleoptera_Belidae
+|                 |  |                 +**|
+|                 |  |                 |  |           +--GH45_17_Ptosima_fass6260L149820a521I1030revcomptransIate3_Current_Insecta_Coleoptera_Buprestidae
+|                 |  |                 |  |        +--|
+|                 |  |                 |  |        |  +---------GH45_19_Aromia_fasC116515a410I918transIate1_Current_Insecta_Coleoptera_Cerambycidae
+|                 |  |                 |  |     +--|
+|                 |  |                 |  |     |  +-----GH45_3_Agnesiotis_fasC107971a520I869revcomptransIate2_Current_Insecta_Coleoptera_Belidae
+|                 |  |                 |  |  +--|
+|                 |  |                 |  |  |  |  +--GH45_26_Oreina_fasC113427a160I711revcomptransIate2_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |                 |  |  |  +--|
+|                 |  |                 |  |  |     +--GH45_35_Oreina_fass3722L61480a126I1075transIate2_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |                 |  +--|
+|                 |  |                 |     |  +--GH45_31_Oreina_fasC117813a310I830revcomptransIate2_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |                 |     +--|
+|                 |  |                 |        +--GH45_32_Oreina_fasC118809a320I863transIate2_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |              +--|
+|                 |  |              |  |             +--CCJ09452_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae
+|                 |  |              |  |          +--|
+|                 |  |              |  |          |  |  +--CCJ09453_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae
+|                 |  |              |  |          |  +--|
+|                 |  |              |  |          |     +--CCJ09454_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae
+|                 |  |              |  |       +--|
+|                 |  |              |  |       |  |  +--GH45_27_Oreina_fasC113946a250I724transIate1_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |              |  |       |  +--|
+|                 |  |              |  |       |     +---GH45_29_Oreina_fasC115788a540I774transIate1_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |              |  |  +----|
+|                 |  |              |  |  |    +--GH45_36_Oreina_fass5710L122350a219I679transIate3_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |              |  +--|
+|                 |  |              |     +------GH45_79_Rhynchitomacerinus_fasC26586646330transIate3_Current_Insecta_Coleoptera_Nemonychidae
+|                 |  |           +--|
+|                 |  |           |  |     +---CCJ09451_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae
+|                 |  |           |  |  +--|
+|                 |  |           |  |  |  +----CCJ09456_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae
+|                 |  |           |  +--|
+|                 |  |           |     |  +--GH45_33_Oreina_fass1713L19230a863I669revcomptransIate3_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |           |     +--|
+|                 |  |           |        +--GH45_34_Oreina_fass1714L19231a870I669revcomptransIate3_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |        +--|
+|                 |  |        |  |        +------GH45_10_Ptosima_fasC102720a530I910transIate2_Current_Insecta_Coleoptera_Buprestidae
+|                 |  |        |  |     +--|
+|                 |  |        |  |     |  +--GH45_8_Ptosima_fasC100755a610I839revcomptransIate1_Current_Insecta_Coleoptera_Buprestidae
+|                 |  |        |  |  +--|
+|                 |  |        |  |  |  |  +---GH45_13_Ptosima_fasC98319a430I759revcomptransIate3_Current_Insecta_Coleoptera_Buprestidae
+|                 |  |        |  |  |  +--|
+|                 |  |        |  |  |     +--GH45_16_Ptosima_fass4995L76940a462I1008revcomptransIate3_Current_Insecta_Coleoptera_Buprestidae
+|                 |  |        |  +--|
+|                 |  |        |     |   +---GH45_14_Ptosima_fass2464L27850a353I839revcomptransIate1_Current_Insecta_Coleoptera_Buprestidae
+|                 |  |        |     +---|
+|                 |  |        |         +--GH45_15_Ptosima_fass2465L27851a386I836revcomptransIate1_Current_Insecta_Coleoptera_Buprestidae
+|                 |  |     +--|
+|                 |  |     |  |                                               +--GH45_102_Sitophilus_fass9299L230340a949I658transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |                                            +--|
+|                 |  |     |  |                                            |  +--GH45_99_Sitophilus_fass5628L93250a605I927transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |                                         +--|
+|                 |  |     |  |                                         |  +--GH45_103_Sitophilus_fass9300L230341a930I711transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |                                      +--|
+|                 |  |     |  |                                      |  |  +--GH45_40_Dendroctonus_fasDMPC14623967transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |                                      |  +--|
+|                 |  |     |  |                                      |     +--GH45_63_Ips_fass1641L44440a642I1033revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |                                   +--|
+|                 |  |     |  |                                   |  +--GH45_76_Nedyus_fass2124L24021a767I874transIate2_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |                                +--|
+|                 |  |     |  |                                |  +--GH45_85_Curculio_fass11540L210310a224I754revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |                             +--|
+|                 |  |     |  |                             |  +--GH45_67_Larinus_fasC120714a40I520revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |                          +--|
+|                 |  |     |  |                          |  +--anno1.g19160.t1
+|                 |  |     |  |                +---------|
+|                 |  |     |  |                |         +--GH45_52_Dendroctonus_fasDMPC14950584transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |             +--|
+|                 |  |     |  |             |  |              +--GH45_54_Diaprepes_fasC153221a50I675transIate2_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |             |  |      +-------|
+|                 |  |     |  |             |  |      |       +**anno2.g35748.t1
+|                 |  |     |  |             |  |   +--|
+|                 |  |     |  |             |  |   |  +----anno1.g12575.t1
+|                 |  |     |  |             |  +---|
+|                 |  |     |  |             |      |           +--GH45_55_Diaprepes_fasC160979a200I872revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |             |      |        +--|
+|                 |  |     |  |             |      |        |  +**anno2.g18337.t1
+|                 |  |     |  |             |      +--------|
+|                 |  |     |  |             |               |         +**GH45_56_Diaprepes_fass11350L207280a281I736revcomptransIate2_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |             |               |     +---|
+|                 |  |     |  |             |               |     |   |     +**GH45_58_Diaprepes_fass6369L64320a221I732revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |             |               |     |   +-----|
+|                 |  |     |  |             |               |     |         |   +--GH45_69_Larinus_fasC133247a320I819revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |             |               |     |         +---|
+|                 |  |     |  |             |               |     |             |  +--GH45_77_Nedyus_fass3206L45820a928I771revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |             |               |     |             +--|
+|                 |  |     |  |             |               |     |                +--GH45_78_Nedyus_fass3208L45822a751I683revcomptransIate2_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |             |               |  +--|
+|                 |  |     |  |             |               |  |  +--anno1.g6943.t1
+|                 |  |     |  |             |               +--|
+|                 |  |     |  |             |                  +---anno1.g6949.t1
+|                 |  |     |  |        +----|
+|                 |  |     |  |        |    |               +--GH45_46_Dendroctonus_fasDMPC14945393transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |        |    |            +--|
+|                 |  |     |  |        |    |            |  +--GH45_62_Ips_fasC43507a570I958transIate2_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |        |    |         +--|
+|                 |  |     |  |        |    |         |  +--GH45_74_Nedyus_fasC90884a710I827revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |        |    |  +------|
+|                 |  |     |  |        |    |  |      |  +--GH45_53_Diaprepes_fasC150893a110I633transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |        |    |  |      +--|
+|                 |  |     |  |        |    |  |         |  +--anno1.g20192.t1
+|                 |  |     |  |        |    |  |         +--|
+|                 |  |     |  |        |    |  |            +--anno1.g20193.t1
+|                 |  |     |  |        |    +--|
+|                 |  |     |  |        |       |          +--GH45_59_Ips_fasC39795a800I696revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |        |       |       +--|
+|                 |  |     |  |        |       |       |  +--GH45_75_Nedyus_fasC92440a720I896revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |        |       |    +--|
+|                 |  |     |  |        |       |    |  +--GH45_71_Larinus_fass6645L91410a154I755transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |        |       +----|
+|                 |  |     |  |        |            +----anno1.g5566.t1
+|                 |  |     |  |     +--|
+|                 |  |     |  |     |  |   +--GH45_90_Liliocerus_fass475L4030a619I603transIate3_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |     |  |     |  +---|
+|                 |  |     |  |     |      +--GH45_92_Liliocerus_fass477L4032a785I676transIate1_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |     |  |  +--|
+|                 |  |     |  |  |  |           +--GH45_38_Dendroctonus_fasDMPC14619627transIate2_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |        +--|
+|                 |  |     |  |  |  |        |  +--GH45_45_Dendroctonus_fasDMPC14945169transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |     +--|
+|                 |  |     |  |  |  |     |  |  +--GH45_64_Ips_fass1963L73290a485I859transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |     |  +--|
+|                 |  |     |  |  |  |     |     |  +--GH45_68_Larinus_fasC129360a30I699transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |     |     +--|
+|                 |  |     |  |  |  |     |        +--GH45_72_Larinus_fass8804L160540a577I830transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |  +--|
+|                 |  |     |  |  |  |  |  |        +--GH45_42_Dendroctonus_fasDMPC14631762transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |  |  |     +--|
+|                 |  |     |  |  |  |  |  |     |  |  +**GH45_49_Dendroctonus_fasDMPC14948954transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |  |  |     |  +--|
+|                 |  |     |  |  |  |  |  |     |     +---GH45_51_Dendroctonus_fasDMPC14949480transIate2_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |  |  |  +--|
+|                 |  |     |  |  |  |  |  |  |  +--GH45_60_Ips_fasC40697a670I744revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |  |  +--|
+|                 |  |     |  |  |  |  |     |      +--GH45_48_Dendroctonus_fasDMPC14947589transIate3_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |  |     +------|
+|                 |  |     |  |  |  |  |            |  +--GH45_61_Ips_fasC42747a410I887revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  |  |            +--|
+|                 |  |     |  |  |  |  |               +--GH45_73_Nedyus_fasC85659a840I647transIate1_Current_Insecta_Coleoptera_Curculionidae
+|                 |  |     |  |  |  +--|
+|                 |  |     |  |  |     +-------GH45_86_Liliocerus_fasC89266a820I763transIate3_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |     |  +--|
+|                 |  |     |     +-----GH45_89_Liliocerus_fass4632L61740a596I775revcomptransIate1_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |  |  +--|
+|                 |  |  |  |   +-------GH45_12_Ptosima_fasC96191a90I700revcomptransIate1_Current_Insecta_Coleoptera_Buprestidae
+|                 |  |  |  +---|
+|                 |  |  |      +---GH45_4_Agnesiotis_fasC108045a440I873transIate2_Current_Insecta_Coleoptera_Belidae
+|                 |  +--|
+|                 |     |     +---GH45_11_Ptosima_fasC108320a520I1187transIate2_Current_Insecta_Coleoptera_Buprestidae
+|                 |     |  +--|
+|                 |     |  |  |       +--GH45_88_Liliocerus_fass1857L17750a735I768revcomptransIate2_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |     |  |  +-------|
+|                 |     |  |          +----GH45_93_Liliocerus_fass5560L86440a306I852transIate1_Current_Insecta_Coleoptera_Chrysomelidae
+|                 |     +--|
+|                 |        |  +------GH45_20_Neandra_fasC208583a620I771revcomptransIate1_Current_Insecta_Coleoptera_Cerambycidae
+|                 |        +**|
+|                 |           +----------GH45_81_Alurnus_fasC123836a50I435transIate2_Current_Insecta_Coleoptera_Chrysomelidae
+|              +--|
+|              |  |              +--AZH23718_Gastrophysa_viriduIa_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae_Gastrophysa
+|              |  |           +--|
+|              |  |           |  |  +--CAA76931_Phaedon_cochleariae_Insecta_Coleoptera_Chrysomelidae
+|              |  |           |  +--|
+|              |  |           |     +**CCJ09450_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae
+|              |  |        +--|
+|              |  |        |  |  +------GH45_24_Donacia_fass1352L15970a893I828revcomptransIate3_Current_Insecta_Coleoptera_Chrysomelidae
+|              |  |        |  +--|
+|              |  |        |     |  +--GH45_25_Donacia_fass6589L164720a955I742transIate2_Current_Insecta_Coleoptera_Chrysomelidae
+|              |  |        |     +--|
+|              |  |        |        +-----GH45_87_Liliocerus_fasC91916a380I867revcomptransIate1_Current_Insecta_Coleoptera_Chrysomelidae
+|              |  |     +**|
+|              |  |     |  +-------------------------------------GH45_23_Diabrotica_fasscaffoId440693259revcomptransIate2_Current_Insecta_Coleoptera_Chrysomelidae
+|              |  |  +--|
+|              |  |  |  +---GH45_37_Oreina_fass8015L305060a533I1082transIate2_Current_Insecta_Coleoptera_Chrysomelidae
+|              |  +--|
+|              |     |  +--GH45_104_Synolabus_fasC3526741250revcomptransIate1_Current_Insecta_Coleoptera_Attelabidae
+|              |     +--|
+|              |        +----GH45_94_Liliocerus_fass6601L139920a815I753revcomptransIate3_Current_Insecta_Coleoptera_Chrysomelidae
+|           +--|
+|           |  +----GH45_22_Rhamnusium_fasC99199a140I722transIate2_Current_Insecta_Coleoptera_Cerambycidae
+|        +--|
+|        |  |     +--GH45_18_Aromia_fasC115607a170I879revcomptransIate3_Current_Insecta_Coleoptera_Cerambycidae
+|        |  |  +--|
+|        |  |  |  |  +-----GH45_2_Agnesiotis_fasC106677a720I798revcomptransIate1_Current_Insecta_Coleoptera_Belidae
+|        |  |  |  +--|
+|        |  |  |     +--GH45_97_PtiIinus_fasC150770a220I703revcomptransIate3_Current_Insecta_Coleoptera_Ptinidae
+|        |  +--|
+|        |     +------GH45_1_Agnesiotis_fasC102229a30I620revcomptransIate3_Current_Insecta_Coleoptera_Belidae
+|     +--|
+|     |  |  +--------------------GH45_21_Neandra_fass9319L423080a37I662transIate2_Current_Insecta_Coleoptera_Cerambycidae
+|     |  +--|
+|     |     +---GH45_9_Ptosima_fasC102134a540I889transIate3_Current_Insecta_Coleoptera_Buprestidae
+|  +--|
+|  |  +--GH45_83_Anoplophora_fasXP018561275_Current_Insecta_Coleoptera_Cerambycidae
++--|
+|  |     +--AHI15752_Apriona_japonica_Eyun_etal_2014_Insecta_Coleoptera_Cerambycidae_Apriona
+|  |  +--|
+|  |  |  +--AKH90729_Batocera_horsfieIdi_Eyun_etal_2014_Insecta_Coleoptera_Cerambycidae_Batocera
+|  +--|
+|     +--AMA76413_Mesosa_myops_Eyun_etal_2014_Insecta_Coleoptera_Cerambycidae
+|
+|  +--AHI15753_Apriona_japonica_Eyun_etal_2014_Insecta_Coleoptera_Cerambycidae_Apriona
++--|
+   +----GH45_82_Anoplophora_fasXP018561265_Insecta_Coleoptera_Cerambycidae
+
+Tree in newick format:
+
+(AAR22385_Apriona_germari_Insecta_Coleoptera_Cerambycidae_Apriona:0.1387234935,(((((((((((((((((((ABW39314_uncuItured_bacterium_Eyun_etal_2014_Bacteria:0.2522473901,ABW39315_uncuItured_bacterium_Eyun_etal_2014_Bacteria:0.2879856845):0.3920692944,((WP_006970736_Piesiocystis_pacifica_Eyun_etal_2014_Bacteria:0.3228776199,(YP_001980898_CeIIvibrio_japonicus_Eyun_etal_2014_Bacteria:0.1869914330,YP_00307238_Teredinibacter_turnerae_Eyun_etal_2014_Bacteria:0.1580758604):0.1072997800):0.3592390031,YP_003249505_Fibrobacter_succinogenes_subsp_succinogenes_Eyun_etal_2014_Bacteria:0.6538912777):0.1965961426):0.2426484477,(AFD53063_BursapheIenchus_mucronatus_Eyun_etal_2014_Nematoda:0.0351889903,BAD34546_Bursaphelenchus_xylophilus_Eyun_etal_2014_Nematoda:0.0122015861):0.1478507648):0.0225897201,(ACM44321_Bursaphelenchus_xylophilus_Eyun_etal_2014_Nematoda:0.0257192743,BAD34544_Bursaphelenchus_xylophilus_Eyun_etal_2014_Nematoda:0.0090630251):0.1559106832):0.0876870812,(AHW52290_Neocosmospora_spN14_Fungi:0.1736756007,((AHW52293_TruncateIIa_spT103_Fungi:0.0807348554,AHW52312_PestaIotiopsis_gIandicoIa_Fungi:0.0544889524):0.0440747876,AHW52307_TubercuIaria_vuIgaris_Fungi:0.0629967075):0.0343658838):0.0566737871):0.0099446458,((((((((((AHW52286_Septotinia_popuIiperda_Fungi:0.0297073848,AHW52302_Ciborinia_cameIIiae_Fungi:0.0298737250):0.0098779162,AHW52316_Botrytis_cinerea_Fungi:0.0692458610):0.1303439429,AHW52317_LachneIIuIa_sp01G12L52_Fungi:0.1989747984):0.0622920211,AHW52297_Rhizina_unduIata_Fungi:0.1287796718):0.0299459647,(AHW52298_ScIerotinia_scIerotiorum_Fungi:0.1349004195,AHW52304_GremmenieIIa_pinicoIa_Fungi:0.0784655746):0.0354080519):0.0631506489,(AHW52301_PateIIina_spP101_Fungi:0.2115038932,EME46279_Dothistroma_septosporum_Eyun_etal_2014_Fungi:0.1060403305):0.0437369475):0.0344609807,AHW52313_Cryptosporiopsis_spT61_Fungi:0.0859808387):0.0681385598,AHW52295_Chaetomium_spCh1_Fungi:0.1599285837):0.0392996551,AHW52299_Macrosporium_spM71_Fungi:0.0672884609):0.0230961706,(((AHW52291_Epicoccum_spP220_Fungi:0.0000026457,AHW52310_MycosphaereIIa_sojae_Fungi:0.0700819948):0.0852337472,(((((AHW52292_MeIanomma_spR51_Fungi:0.0000024574,EIW52933_Trametes_versicoIor_Eyun_etal_2014_Fungi:0.7949642243):0.0730753925,AHW52305_Metasphaeria_spM111_Fungi:0.0543235254):0.0303406981,AHW52309_Neocucurbitaria_cava_Fungi:0.0212641832):0.0378433282,AHW52296_PhyIIosticta_aIcides_Fungi:0.0000024023):0.0118843548,AHW52294_Paraphoma_spZ1_Fungi:0.0234570802):0.0068227442):0.0580544540,AHW52306_NeopestaIotiopsis_foedans_Fungi:0.2459584997):0.0555604163):0.0152298905):0.1172421031,ACV50414_Cryptopygus_antarcticus_Eyun_etal_2014_Insecta_Collembola:0.2724016334):0.0191284959,YP_007359081_Myxococcus_stipitatus_Eyun_etal_2014_Bacteria:0.3744643926):0.0458558751,((((BAA98039_ReticuIitermes_speratus_hindgut_protist_Eyun_etal_2014_Protista:0.0249527603,(BAA98041_ReticuIitermes_speratus_hindgut_protist_Eyun_etal_2014_Protista:0.0784793448,(BAA98045_ReticuIitermes_speratus_hindgut_protist_Eyun_etal_2014_Protista:0.0349400743,BAF57323_symbiotic_protist_of_ReticuIitermes_speratus_Eyun_etal_2014_Protista:0.0074332050):0.0488093052):0.0548880008):0.0617111603,BAA98048_ReticuIitermes_speratus_hindgut_protist_Eyun_etal_2014_Protista:0.0307562659):0.1569044729,BAF57441_symbiotic_protist_of_Mastotermes_darwiniensis_Eyun_etal_2014_Protista:0.5224357795):0.0284340953,(BAF57356_symbiotic_protist_of_Hodotermopsis_sjoestedti_Eyun_etal_2014_Protista:0.2172212386,BAF57479_symbiotic_protist_of_Cryptocercus_punctuIatus_Eyun_etal_2014_Protista:0.2206655683):0.0445568379):0.1188806585):0.1062444168,XP_002494081_KomagataeIIa_phaffii_Eyun_etal_2014_Fungi:0.2395353896):0.0320802408,CAB92325_Piromyces_equi_Eyun_etal_2014_Fungi:0.3448787171):0.1268210804,(((GH45_100_Sitophilus_fass6476L117530a177I778transIate3_Current_Insecta_Coleoptera_Curculionidae:0.0688911112,GH45_98_Sitophilus_fasC260463a550I738transIate2_Current_Insecta_Coleoptera_Curculionidae:0.0420146645):0.2280799856,GH45_101_Sitophilus_fass6737L126300a637I801transIate3_Current_Insecta_Coleoptera_Curculionidae:0.0556552041):0.0947346168,(((((((GH45_41_Dendroctonus_fasDMPC14629260transIate2_Current_Insecta_Coleoptera_Curculionidae:0.0113385410,GH45_43_Dendroctonus_fasDMPC14942863transIate1_Current_Insecta_Coleoptera_Curculionidae:0.0744498760):0.0619238451,GH45_47_Dendroctonus_fasDMPC14946979transIate2_Current_Insecta_Coleoptera_Curculionidae:0.1649935703):0.0482347068,GH45_80_Pycnomerus_fass7849L118420a727I927revcomptransIate3_Current_Insecta_Coleoptera_Zopheridae:0.1255483910):0.0536129766,(GH45_65_Ips_fass50L530a213I693revcomptransIate2_Current_Insecta_Coleoptera_Curculionidae:0.1375045322,GH45_66_Ips_fass871L15550a708I866transIate1_Current_Insecta_Coleoptera_Curculionidae:0.0828955999):0.0417577460):0.0296636455,((GH45_57_Diaprepes_fass12055L251170a203I737revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae:0.0000029318,(((anno1.g31604.t1:0.0715693459,anno2.g40770.t1:0.0444430291):0.0525740936,anno1.g31609.t1:0.0788360746):0.2264670138,anno1.g31608.t1:0.0429088757):0.1752823183):0.3007850437,GH45_70_Larinus_fasC134187a260I854revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.0327810283):0.0196127608):0.0655217810,GH45_84_Curculio_fasC149720a640I781revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.1662251940):0.0531331598,(GH45_95_Oxoplatypus_fass6132L171950a381I1771revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae:0.0736031418,GH45_96_Oxoplatypus_fass6133L171951a365I832revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.0837058481):0.1387309622):0.0673626476):0.0925435540):0.0536908417,(((((((((((ADU33334_Gastrophysa_viriduIa_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae_Gastrophysa:0.0268441096,CCJ09455_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae:0.0773310324):0.0334424913,(GH45_28_Oreina_fasC114158a550I730transIate1_Current_Insecta_Coleoptera_Chrysomelidae:0.2488331569,GH45_30_Oreina_fasC116389a530I790transIate3_Current_Insecta_Coleoptera_Chrysomelidae:0.0604461195):0.0903291568):0.3530208210,(GH45_5_Agnesiotis_fasC108229a520I884revcomptransIate2_Current_Insecta_Coleoptera_Belidae:0.1054296846,GH45_7_Agnesiotis_fass6062L258050a601I875transIate3_Current_Insecta_Coleoptera_Belidae:0.2771308629):0.1780030284):0.0904660781,GH45_6_Agnesiotis_fass1093L12620a691I796revcomptransIate3_Current_Insecta_Coleoptera_Belidae:0.3434353539):0.1042789840,((((GH45_17_Ptosima_fass6260L149820a521I1030revcomptransIate3_Current_Insecta_Coleoptera_Buprestidae:0.1593804349,GH45_19_Aromia_fasC116515a410I918transIate1_Current_Insecta_Coleoptera_Cerambycidae:0.4979920267):0.1047877758,GH45_3_Agnesiotis_fasC107971a520I869revcomptransIate2_Current_Insecta_Coleoptera_Belidae:0.2821475080):0.1205482500,(GH45_26_Oreina_fasC113427a160I711revcomptransIate2_Current_Insecta_Coleoptera_Chrysomelidae:0.1166499117,GH45_35_Oreina_fass3722L61480a126I1075transIate2_Current_Insecta_Coleoptera_Chrysomelidae:0.0904957958):0.0491834943):0.0910364471,(GH45_31_Oreina_fasC117813a310I830revcomptransIate2_Current_Insecta_Coleoptera_Chrysomelidae:0.1314031618,GH45_32_Oreina_fasC118809a320I863transIate2_Current_Insecta_Coleoptera_Chrysomelidae:0.1125747179):0.0814960407):0.0922819013):0.0000483047,((((CCJ09452_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae:0.0566707955,(CCJ09453_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae:0.0482134591,CCJ09454_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae:0.0253793332):0.0117625100):0.0722873453,(GH45_27_Oreina_fasC113946a250I724transIate1_Current_Insecta_Coleoptera_Chrysomelidae:0.0963484844,GH45_29_Oreina_fasC115788a540I774transIate1_Current_Insecta_Coleoptera_Chrysomelidae:0.1939773790):0.0503491626):0.0334160409,GH45_36_Oreina_fass5710L122350a219I679transIate3_Current_Insecta_Coleoptera_Chrysomelidae:0.1545853976):0.2659455510,GH45_79_Rhynchitomacerinus_fasC26586646330transIate3_Current_Insecta_Coleoptera_Nemonychidae:0.3301285431):0.0783446308):0.0474650127,((CCJ09451_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae:0.1911539600,CCJ09456_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae:0.2654700588):0.0800212389,(GH45_33_Oreina_fass1713L19230a863I669revcomptransIate3_Current_Insecta_Coleoptera_Chrysomelidae:0.0151308477,GH45_34_Oreina_fass1714L19231a870I669revcomptransIate3_Current_Insecta_Coleoptera_Chrysomelidae:0.0247855419):0.1425506221):0.1371494634):0.0471637216,(((GH45_10_Ptosima_fasC102720a530I910transIate2_Current_Insecta_Coleoptera_Buprestidae:0.3307586638,GH45_8_Ptosima_fasC100755a610I839revcomptransIate1_Current_Insecta_Coleoptera_Buprestidae:0.1440046420):0.0186869945,(GH45_13_Ptosima_fasC98319a430I759revcomptransIate3_Current_Insecta_Coleoptera_Buprestidae:0.1834699216,GH45_16_Ptosima_fass4995L76940a462I1008revcomptransIate3_Current_Insecta_Coleoptera_Buprestidae:0.0980726040):0.0937645792):0.0361080851,(GH45_14_Ptosima_fass2464L27850a353I839revcomptransIate1_Current_Insecta_Coleoptera_Buprestidae:0.1962165131,GH45_15_Ptosima_fass2465L27851a386I836revcomptransIate1_Current_Insecta_Coleoptera_Buprestidae:0.0243097846):0.2178018563):0.0370159827):0.0147744949,(((((((((((((GH45_102_Sitophilus_fass9299L230340a949I658transIate1_Current_Insecta_Coleoptera_Curculionidae:0.0998366044,GH45_99_Sitophilus_fass5628L93250a605I927transIate3_Current_Insecta_Coleoptera_Curculionidae:0.1006863733):0.0151966946,GH45_103_Sitophilus_fass9300L230341a930I711transIate3_Current_Insecta_Coleoptera_Curculionidae:0.0132219977):0.0819888900,(GH45_40_Dendroctonus_fasDMPC14623967transIate3_Current_Insecta_Coleoptera_Curculionidae:0.0935758532,GH45_63_Ips_fass1641L44440a642I1033revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.1095804239):0.0974827586):0.0545047876,GH45_76_Nedyus_fass2124L24021a767I874transIate2_Current_Insecta_Coleoptera_Curculionidae:0.0702048709):0.0418880630,GH45_85_Curculio_fass11540L210310a224I754revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.0606936433):0.0489295056,GH45_67_Larinus_fasC120714a40I520revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.1129792682):0.0260114935,anno1.g19160.t1:0.1808374839):0.0139743434,GH45_52_Dendroctonus_fasDMPC14950584transIate1_Current_Insecta_Coleoptera_Curculionidae:0.1564275747):0.4949824305,(((GH45_54_Diaprepes_fasC153221a50I675transIate2_Current_Insecta_Coleoptera_Curculionidae:0.0754434344,anno2.g35748.t1:0.0000024729):0.3762455903,anno1.g12575.t1:0.2509165847):0.1309637719,((GH45_55_Diaprepes_fasC160979a200I872revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae:0.1546904253,anno2.g18337.t1:0.0006855699):0.1542678403,(((GH45_56_Diaprepes_fass11350L207280a281I736revcomptransIate2_Current_Insecta_Coleoptera_Curculionidae:0.0000029154,(GH45_58_Diaprepes_fass6369L64320a221I732revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.0000026878,(GH45_69_Larinus_fasC133247a320I819revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae:0.0755596503,(GH45_77_Nedyus_fass3206L45820a928I771revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.0185720729,GH45_78_Nedyus_fass3208L45822a751I683revcomptransIate2_Current_Insecta_Coleoptera_Curculionidae:0.0932589931):0.1788690133):0.1875672269):0.2736318293):0.1855138964,anno1.g6943.t1:0.0188751433):0.1448638992,anno1.g6949.t1:0.2220770609):0.0450935710):0.4270146834):0.1854614938):0.0774417698,((((GH45_46_Dendroctonus_fasDMPC14945393transIate3_Current_Insecta_Coleoptera_Curculionidae:0.0956666855,GH45_62_Ips_fasC43507a570I958transIate2_Current_Insecta_Coleoptera_Curculionidae:0.0856416268):0.0520090824,GH45_74_Nedyus_fasC90884a710I827revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae:0.1341097498):0.1140805233,(GH45_53_Diaprepes_fasC150893a110I633transIate1_Current_Insecta_Coleoptera_Curculionidae:0.0090027543,(anno1.g20192.t1:0.0090254262,anno1.g20193.t1:0.0777205289):0.0951868871):0.1761279565):0.3243719298,(((GH45_59_Ips_fasC39795a800I696revcomptransIate3_Current_Insecta_Coleoptera_Curculionidae:0.1047993113,GH45_75_Nedyus_fasC92440a720I896revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.1349469509):0.0546413175,GH45_71_Larinus_fass6645L91410a154I755transIate1_Current_Insecta_Coleoptera_Curculionidae:0.0160660704):0.0904748805,anno1.g5566.t1:0.2689547256):0.2423515104):0.0693661868):0.2658024250,(GH45_90_Liliocerus_fass475L4030a619I603transIate3_Current_Insecta_Coleoptera_Chrysomelidae:0.0889299320,GH45_92_Liliocerus_fass477L4032a785I676transIate1_Current_Insecta_Coleoptera_Chrysomelidae:0.0061730214):0.1920829696):0.0304339148,((((GH45_38_Dendroctonus_fasDMPC14619627transIate2_Current_Insecta_Coleoptera_Curculionidae:0.0134549003,GH45_45_Dendroctonus_fasDMPC14945169transIate1_Current_Insecta_Coleoptera_Curculionidae:0.0144751499):0.0723794932,(GH45_64_Ips_fass1963L73290a485I859transIate3_Current_Insecta_Coleoptera_Curculionidae:0.0882682407,(GH45_68_Larinus_fasC129360a30I699transIate1_Current_Insecta_Coleoptera_Curculionidae:0.1189025911,GH45_72_Larinus_fass8804L160540a577I830transIate3_Current_Insecta_Coleoptera_Curculionidae:0.0829769654):0.0434576776):0.1460908142):0.1522592911,(((GH45_42_Dendroctonus_fasDMPC14631762transIate1_Current_Insecta_Coleoptera_Curculionidae:0.1198164564,(GH45_49_Dendroctonus_fasDMPC14948954transIate3_Current_Insecta_Coleoptera_Curculionidae:0.0000021390,GH45_51_Dendroctonus_fasDMPC14949480transIate2_Current_Insecta_Coleoptera_Curculionidae:0.1839504137):0.0287101590):0.0534290445,GH45_60_Ips_fasC40697a670I744revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.0940265279):0.1333410715,(GH45_48_Dendroctonus_fasDMPC14947589transIate3_Current_Insecta_Coleoptera_Curculionidae:0.0293908420,(GH45_61_Ips_fasC42747a410I887revcomptransIate1_Current_Insecta_Coleoptera_Curculionidae:0.0606035106,GH45_73_Nedyus_fasC85659a840I647transIate1_Current_Insecta_Coleoptera_Curculionidae:0.1325160196):0.0313384601):0.3386215254):0.1304927559):0.0275926907,GH45_86_Liliocerus_fasC89266a820I763transIate3_Current_Insecta_Coleoptera_Chrysomelidae:0.3877752229):0.0613026197):0.0302254755,GH45_89_Liliocerus_fass4632L61740a596I775revcomptransIate1_Current_Insecta_Coleoptera_Chrysomelidae:0.2994335535):0.0855006566):0.0758990571,(GH45_12_Ptosima_fasC96191a90I700revcomptransIate1_Current_Insecta_Coleoptera_Buprestidae:0.4070848454,GH45_4_Agnesiotis_fasC108045a440I873transIate2_Current_Insecta_Coleoptera_Belidae:0.1834291589):0.1869008320):0.0434789972,((GH45_11_Ptosima_fasC108320a520I1187transIate2_Current_Insecta_Coleoptera_Buprestidae:0.2093365907,(GH45_88_Liliocerus_fass1857L17750a735I768revcomptransIate2_Current_Insecta_Coleoptera_Chrysomelidae:0.1457658569,GH45_93_Liliocerus_fass5560L86440a306I852transIate1_Current_Insecta_Coleoptera_Chrysomelidae:0.2336749573):0.3941302766):0.1051672266,(GH45_20_Neandra_fasC208583a620I771revcomptransIate1_Current_Insecta_Coleoptera_Cerambycidae:0.3556669403,GH45_81_Alurnus_fasC123836a50I435transIate2_Current_Insecta_Coleoptera_Chrysomelidae:0.5039723746):0.0000029431):0.0521564465):0.0483319381):0.0747954501,(((((AZH23718_Gastrophysa_viriduIa_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae_Gastrophysa:0.1256059526,(CAA76931_Phaedon_cochleariae_Insecta_Coleoptera_Chrysomelidae:0.0589468272,CCJ09450_Phaedon_cochIeariae_Eyun_etal_2014_Insecta_Coleoptera_Chrysomelidae:0.0000024832):0.0975770174):0.0785622426,(GH45_24_Donacia_fass1352L15970a893I828revcomptransIate3_Current_Insecta_Coleoptera_Chrysomelidae:0.3528462210,(GH45_25_Donacia_fass6589L164720a955I742transIate2_Current_Insecta_Coleoptera_Chrysomelidae:0.0695055620,GH45_87_Liliocerus_fasC91916a380I867revcomptransIate1_Current_Insecta_Coleoptera_Chrysomelidae:0.2830228262):0.0440568378):0.1631068420):0.1113992528,GH45_23_Diabrotica_fasscaffoId440693259revcomptransIate2_Current_Insecta_Coleoptera_Chrysomelidae:1.7629395305):0.0000026592,GH45_37_Oreina_fass8015L305060a533I1082transIate2_Current_Insecta_Coleoptera_Chrysomelidae:0.1902941220):0.1165649790,(GH45_104_Synolabus_fasC3526741250revcomptransIate1_Current_Insecta_Coleoptera_Attelabidae:0.1344896027,GH45_94_Liliocerus_fass6601L139920a815I753revcomptransIate3_Current_Insecta_Coleoptera_Chrysomelidae:0.2305940449):0.1029518136):0.0701362947):0.0624529476,GH45_22_Rhamnusium_fasC99199a140I722transIate2_Current_Insecta_Coleoptera_Cerambycidae:0.2396242015):0.0446840809,((GH45_18_Aromia_fasC115607a170I879revcomptransIate3_Current_Insecta_Coleoptera_Cerambycidae:0.1276271117,(GH45_2_Agnesiotis_fasC106677a720I798revcomptransIate1_Current_Insecta_Coleoptera_Belidae:0.3137899500,GH45_97_PtiIinus_fasC150770a220I703revcomptransIate3_Current_Insecta_Coleoptera_Ptinidae:0.1520129883):0.0303374249):0.0610746249,GH45_1_Agnesiotis_fasC102229a30I620revcomptransIate3_Current_Insecta_Coleoptera_Belidae:0.3446604922):0.0940885923):0.0184598127,(GH45_21_Neandra_fass9319L423080a37I662transIate2_Current_Insecta_Coleoptera_Cerambycidae:0.9697542566,GH45_9_Ptosima_fasC102134a540I889transIate3_Current_Insecta_Coleoptera_Buprestidae:0.2249506987):0.0407362397):0.0413415593,GH45_83_Anoplophora_fasXP018561275_Current_Insecta_Coleoptera_Cerambycidae:0.0917047457):0.0438042234,((AHI15752_Apriona_japonica_Eyun_etal_2014_Insecta_Coleoptera_Cerambycidae_Apriona:0.0054955343,AKH90729_Batocera_horsfieIdi_Eyun_etal_2014_Insecta_Coleoptera_Cerambycidae_Batocera:0.0163640525):0.0827968082,AMA76413_Mesosa_myops_Eyun_etal_2014_Insecta_Coleoptera_Cerambycidae:0.1596353128):0.0823588845):0.0612932698,(AHI15753_Apriona_japonica_Eyun_etal_2014_Insecta_Coleoptera_Cerambycidae_Apriona:0.1186477262,GH45_82_Anoplophora_fasXP018561265_Insecta_Coleoptera_Cerambycidae:0.2567696585):0.0604868238);
+
+TIME STAMP
+----------
+
+Date and time: Tue Mar  7 12:29:32 2023
+Total CPU time used: 757.681 seconds (0h:12m:37s)
+Total wall-clock time used: 761.255 seconds (0h:12m:41s)
+

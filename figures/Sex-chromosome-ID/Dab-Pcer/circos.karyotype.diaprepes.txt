@@ -1,0 +1,7 @@
+chr - Da3 Dab2 0 34539124 e66101
+chr - Da1 Dab4 0 22371973 fdb863
+chr - Da4 Dab7 0  6938866 fdb863
+chr - Da2 Dab8 0  4948967 fdb863
+chr - Da5 Dab12 0 2742048 fdb863
+chr - Da6 Dab18 0 1817669 fdb863
+chr - Da7 Dab17 0 1870972 fdb863

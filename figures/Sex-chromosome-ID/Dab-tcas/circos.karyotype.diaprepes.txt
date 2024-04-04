@@ -1,0 +1,41 @@
+chr	-	Da-1	Dab1	0	62763540	b2abd2		
+chr	-	Da-2	Dab2	0	34539124	e66101		
+chr	-	Da-3	Dab3	0	26245004	b2abd2		
+chr	-	Da-4	Dab4	0	22371973	fdb863		
+chr	-	Da-5	Dab5	0	16306397	b2abd2		
+chr	-	Da-6	Dab6	0	10024996	b2abd2		
+chr	-	Da-7	Dab7	0	6938866	fdb863		
+chr	-	Da-8	Dab8	0	4948967	fdb863		
+chr	-	Da-9	Dab9	0	4814560	b2abd2		
+chr	-	Da-10	Dab10	0	4765691	b2abd2		
+chr	-	Da-11	Dab11	0	4087865	b2abd2		
+chr	-	Da-12	Dab12	0	2742048	fdb863		
+chr	-	Da-13	Dab13	0	2684240	b2abd2		
+chr	-	Da-14	Dab14	0	2373372	b2abd2		
+chr	-	Da-15	Dab15	0	2214967	b2abd2		
+chr	-	Da-16	Dab16	0	1907739	b2abd2		
+chr	-	Da-17	Dab17	0	1870972	fdb863		
+chr	-	Da-18	Dab18	0	1817669	fdb863		
+chr	-	Da-19	Dab19	0	426201	b2abd2		
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								

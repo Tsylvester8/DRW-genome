@@ -1,0 +1,198 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=104;
+	taxlabels
+	AAB38792_Solanum_lycopersicum_Plantae
+	AAB38794_Solanum_lycopersicum_Plantae
+	AAC14742_Pisum_sativum_Plantae
+	AAG12248_Prunus_armeniaca_Plantae
+	AAW28928_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae
+	AAX13972_Nicotiana_tabacum_Plantae
+	ACO54875_Phytophthora_capsici_Oomycota
+	ACQ85264_Musa_acuminata_Plantae
+	ADM98093_Dickeya_dadantii_Bacteria
+	ADU33260_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae
+	ADU33261_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae
+	ADU33262_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae
+	ADU33263_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae
+	AEE62090_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	AEE62177_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	AEE62813_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	AEE62955_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	AEE63085_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	AET61714_Paenibacillus_terrae_Bacteria
+	AFB77929_Gossypium_hirsutum_Plantae
+	AFC98398_Lepidium_sativum_Plantae
+	AFI23414_Coffea_arabica_Plantae
+	AFQ23194_Theobroma_cacao_Plantae
+	AGX13882_Brassica_rapa_subsp_chinensis_Plantae
+	AHB84678_Citrus_reticulata_Plantae
+	AHC08664_Sphenophorus_laevis_Insecta_Coleoptera_Curculionidae
+	AJH66132_Malus_domestica_Plantae
+	AMK48559_Rhynchophorus_ferrugineus_Insecta_Coleoptera_Curculionidae
+	AMK48575_Rhynchophorus_ferrugineus_Insecta_Coleoptera_Curculionidae
+	AXH37591_Aspergillus_niger_Fungi
+	BAA89480_Salix_gilgiana_Plantae
+	BAC67662_Pisum_sativum_Plantae
+	BBC20168_Chamaecyparis_obtusa_Plantae
+	CAB58974_Arabidopsis_thaliana_Plantae
+	CAD29733_Sesbania_rostrata_Plantae
+	CAE766332_Cicer_arietinum_Plantae
+	CE8_10_Dendroctonus_fasDMPC14629650_translate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_11_Dendroctonus_fasDMPC14629681_translate1_Current_Insecta_Coleoptera_Curculionidae
+	CE8_13_Dendroctonus_fasDMPC14938993_translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_14_Dendroctonus_fasDMPC14940711_translate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_15_Dendroctonus_fasDMPC14942077_translate1_Current_Insecta_Coleoptera_Curculionidae
+	CE8_16_Dendroctonus_fasDMPC14943636_translate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_17_Dendroctonus_fasDMPC14944558_translate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_18_Dendroctonus_fasDMPC14947005_translate1_Current_Insecta_Coleoptera_Curculionidae
+	CE8_19_Dendroctonus_fasDMPC14947662_translate1_Current_Insecta_Coleoptera_Curculionidae
+	CE8_1_Agnesiotis_fasC104011_a30l680revcomptranslate2_Current_Insecta_Coleoptera_Belidae
+	CE8_20_Dendroctonus_fasDMPC14949132_translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_22_Dendroctonus_fasDMPC14951386_translate1_Current_Insecta_Coleoptera_Curculionidae
+	CE8_24_Dendroctonus_fasDMPC14952115_translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_25_Diaprepes_fasC147139_a50l573revcomptranslate1_Current_Insecta_Coleoptera_Curculionidae
+	CE8_26_Diaprepes_fasC166024_a60l1073revcomptranslate1_Current_Insecta_Coleoptera_Curculionidae
+	CE8_27_Ips_fasC44601_a60l1068translate12_Current_Insecta_Coleoptera_Curculionidae
+	CE8_28_Ips_fasC45407_a730l1181translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_29_Ips_fasC45939_a490l1268revcomptranslate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_2_Agnesiotis_fasC112533_a610l1356revcomptranslate1_Current_Insecta_Coleoptera_Belidae
+	CE8_30_Ips_fasC46405_a270l1347revcomptranslate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_31_Ips_fass1031_L19750a70l483revcomptranslate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_32_Ips_fass2498_L118500a712l1231translate1_Current_Insecta_Coleoptera_Curculionidae
+	CE8_33_Larinus_fasC136999_a100l979translate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_34_Larinus_fasC138281_a30l1041translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_35_Larinus_fasC139731_a170l1123revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_3_Agnesiotis_fasC98570_a40l522translate3_Current_Insecta_Coleoptera_Belidae
+	CE8_41_Nedyus_fasC90050_a280l793revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_42_Nedyus_fasC92372_a290l893translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_43_Nedyus_fasC97084_a630l1170revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_44_Nedyus_fasC97788_a1020l1230translate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_45_Nedyus_fass1013_L9542a641l1162translate12_Current_Insecta_Coleoptera_Curculionidae
+	CE8_49_Pempsamacra_fass18082_L516640a159l1433revcomptranslate1_Current_Insecta_Coleoptera_Cerambycidae
+	CE8_4_Curculio_fasC158725_a600l1245revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_52_Ptosima_fasC110118_a590l1305revcomptranslate1_Current_Insecta_Coleoptera_Buprestidae
+	CE8_53_Ptosima_fasC114174_a510l1674translate2_Current_Insecta_Coleoptera_Buprestidae
+	CE8_54_Ptosima_fasC117078_a320l2127translate1_Current_Insecta_Coleoptera_Buprestidae
+	CE8_55_Sitophilus_fasC268977_a580l1173translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_56_Sitophilus_fass12980_L574350a272l966revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_57_Sitophilus_fass13240_L591060a639l1133translate2_Current_Insecta_Coleoptera_Curculionidae
+	CE8_58_Sitophilus_fass6777_L127580a616l1483translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_59_Sitophilus_fass8561_L193620a932l1388translate1_Current_Insecta_Coleoptera_Curculionidae
+	CE8_5_Curculio_fasC159767_a30l1332revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_6_Curculio_fass7192_L77480a688l1316translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_7_Dendroctonus_fasDMPC14622305_translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_8_Dendroctonus_fasDMPC14622560_translate3_Current_Insecta_Coleoptera_Curculionidae
+	CE8_9_Dendroctonus_fasDMPC14624550_translate22_Current_Insecta_Coleoptera_Curculionidae
+	EAR65901_Bacillus_spNRRLB14911_Bacteria
+	EJS96139_Pectobacterium_wasabiae_Bacteria
+	ELK55605_Haloferax_spBAB2207_Archaea
+	ENN76110_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	ENN78470_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	ENN78471_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	ENN80574_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	ENN80575_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	ENN82081_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	ENN83163_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	ERL89375_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae
+	GAT23939_Aspergillus_luchuensis_Fungi
+	KGT99824_Dickeya_fangzhongdai_Bacteria
+	KHN89838_Pectobacterium_carotovorum_subsp_actinidiae_Bacteria
+	KMK83460_Pectobacterium_atrosepticum_Bacteria
+	KOX83894_Salmonella_enterica_subsp_enterica_serovar_Enteritidis_Bacteria
+	PNX72603_Trifolium_pratense_Plantae
+	WP_012436943_Xanthomonas_campestris_Bacteria
+	WP_014702023_Pectobacterium_parmentieri_Bacteria
+	WP_033581113_Dickeya_chrysanthemi_Bacteria
+	WP_040003501_Dickeya_chrysanthemi_Bacteria
+	WP_050516140_Dickeya_chrysanthemi_Bacteria
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (AAB38792_Solanum_lycopersicum_Plantae[&!color=#00ff00]:0.021325,AAB38794_Solanum_lycopersicum_Plantae[&!color=#00ff00]:0.090726,(((AAC14742_Pisum_sativum_Plantae[&!color=#00ff00]:0.042698,(BAC67662_Pisum_sativum_Plantae[&!color=#00ff00]:0.099186,PNX72603_Trifolium_pratense_Plantae[&!color=#00ff00]:0.053518)[&label=78,!color=#00ff00]:0.022327)[&label=99,!color=#00ff00]:0.096572,CAD29733_Sesbania_rostrata_Plantae[&!color=#00ff00]:0.073671)[&label=100,!color=#00ff00]:0.157055,((((((((((AAG12248_Prunus_armeniaca_Plantae[&!color=#00ff00]:0.950006,AGX13882_Brassica_rapa_subsp_chinensis_Plantae[&!color=#00ff00]:1.203461)[&label=67,!color=#00ff00]:0.199963,WP_012436943_Xanthomonas_campestris_Bacteria:0.784506)[&label=6]:0.122945,((AET61714_Paenibacillus_terrae_Bacteria:1.124626,EAR65901_Bacillus_spNRRLB14911_Bacteria:0.538576)[&label=59]:0.20611,ELK55605_Haloferax_spBAB2207_Archaea[&!color=#ffa1ba]:0.852842)[&label=34]:0.216363)[&label=16]:0.253035,(((((((((((((AAW28928_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.033412,CE8_55_Sitophilus_fasC268977_a580l1173translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.013277)[&label=100,!color=#ff0000]:0.137596,AHC08664_Sphenophorus_laevis_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.213345)[&label=61,!color=#ff0000]:0.028112,AMK48559_Rhynchophorus_ferrugineus_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.091208)[&label=99,!color=#ff0000]:0.151776,((CE8_28_Ips_fasC45407_a730l1181translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.130524,CE8_9_Dendroctonus_fasDMPC14624550_translate22_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.11071)[&label=66,!color=#ff0000]:0.047009,(CE8_31_Ips_fass1031_L19750a70l483revcomptranslate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.129888,CE8_32_Ips_fass2498_L118500a712l1231translate1_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.126906)[&label=100,!color=#ff0000]:0.122785)[&label=94,!color=#ff0000]:0.082329)[&label=68,!color=#ff0000]:0.061373,((CE8_11_Dendroctonus_fasDMPC14629681_translate1_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.031048,((ENN78470_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:2.0E-6,ENN82081_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.003954)[&label=63,!color=#ff0000]:0.003352,ENN80575_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.070836)[&label=97,!color=#ff0000]:0.016675)[&label=100,!color=#ff0000]:0.099686,(CE8_16_Dendroctonus_fasDMPC14943636_translate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.005299,(CE8_20_Dendroctonus_fasDMPC14949132_translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:2.0E-6,ENN78471_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:2.0E-6)[&label=100,!color=#ff0000]:2.0E-6)[&label=100,!color=#ff0000]:0.120783)[&label=97,!color=#ff0000]:0.092457)[&label=35,!color=#ff0000]:0.017245,(((AEE62955_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:2.0E-6,CE8_13_Dendroctonus_fasDMPC14938993_translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:2.0E-6)[&label=79,!color=#ff0000]:3.0E-6,(ENN80574_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.079052,ENN83163_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:3.0E-6)[&label=63,!color=#ff0000]:0.003306)[&label=98,!color=#ff0000]:0.03244,CE8_10_Dendroctonus_fasDMPC14629650_translate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.200009)[&label=100,!color=#ff0000]:0.158649)[&label=65,!color=#ff0000]:0.093979,CE8_45_Nedyus_fass1013_L9542a641l1162translate12_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.466713)[&label=99,!color=#ff0000]:0.189709,((((AEE63085_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.0,ENN76110_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.0)[&label=28,!color=#ff0000]:2.0E-6,CE8_19_Dendroctonus_fasDMPC14947662_translate1_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:2.0E-6)[&label=100,!color=#ff0000]:0.203879,CE8_29_Ips_fasC45939_a490l1268revcomptranslate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.14636)[&label=98,!color=#ff0000]:0.123961,(CE8_33_Larinus_fasC136999_a100l979translate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.415246,CE8_6_Curculio_fass7192_L77480a688l1316translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.273686)[&label=89,!color=#ff0000]:0.105339)[&label=100,!color=#ff0000]:0.216472)[&label=38]:0.059066,((((((ADM98093_Dickeya_dadantii_Bacteria:0.027169,KGT99824_Dickeya_fangzhongdai_Bacteria:0.051401)[&label=97]:0.053407,((WP_033581113_Dickeya_chrysanthemi_Bacteria:0.009383,WP_050516140_Dickeya_chrysanthemi_Bacteria:0.01726)[&label=76]:0.017148,WP_040003501_Dickeya_chrysanthemi_Bacteria:0.026019)[&label=60]:0.008282)[&label=99]:0.179824,(((EJS96139_Pectobacterium_wasabiae_Bacteria:0.059664,WP_014702023_Pectobacterium_parmentieri_Bacteria:0.052348)[&label=47]:0.015791,KHN89838_Pectobacterium_carotovorum_subsp_actinidiae_Bacteria:0.08199)[&label=61]:0.031177,KMK83460_Pectobacterium_atrosepticum_Bacteria:0.13309)[&label=100]:0.317614)[&label=100]:0.342294,KOX83894_Salmonella_enterica_subsp_enterica_serovar_Enteritidis_Bacteria:0.64619)[&label=100]:0.418463,CE8_27_Ips_fasC44601_a60l1068translate12_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.71895)[&label=33,!color=#000000]:0.11701,(((CE8_1_Agnesiotis_fasC104011_a30l680revcomptranslate2_Current_Insecta_Coleoptera_Belidae[&!color=#ff0000]:0.449845,CE8_53_Ptosima_fasC114174_a510l1674translate2_Current_Insecta_Coleoptera_Buprestidae[&!color=#ff0000]:0.413664)[&label=59,!color=#ff0000]:0.144071,(CE8_52_Ptosima_fasC110118_a590l1305revcomptranslate1_Current_Insecta_Coleoptera_Buprestidae[&!color=#ff0000]:0.238746,CE8_54_Ptosima_fasC117078_a320l2127translate1_Current_Insecta_Coleoptera_Buprestidae[&!color=#ff0000]:0.175149)[&label=100,!color=#ff0000]:0.12328)[&label=54,!color=#ff0000]:0.107351,((CE8_2_Agnesiotis_fasC112533_a610l1356revcomptranslate1_Current_Insecta_Coleoptera_Belidae[&!color=#ff0000]:0.208589,CE8_49_Pempsamacra_fass18082_L516640a159l1433revcomptranslate1_Current_Insecta_Coleoptera_Cerambycidae[&!color=#ff0000]:0.238036)[&label=90,!color=#ff0000]:0.149007,CE8_3_Agnesiotis_fasC98570_a40l522translate3_Current_Insecta_Coleoptera_Belidae[&!color=#ff0000]:0.47066)[&label=29,!color=#ff0000]:0.061234)[&label=61,!color=#ff0000]:0.116673)[&label=67,!color=#000000]:0.182469)[&label=25,!color=#000000]:0.093452,(((ADU33262_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.00624,CE8_58_Sitophilus_fass6777_L127580a616l1483translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.037356)[&label=100,!color=#ff0000]:0.210706,(ADU33263_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.006195,CE8_59_Sitophilus_fass8561_L193620a932l1388translate1_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.032194)[&label=100,!color=#ff0000]:0.608397)[&label=93,!color=#ff0000]:0.16366,(((((((AEE62177_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:2.0E-6,CE8_18_Dendroctonus_fasDMPC14947005_translate1_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:3.0E-6)[&label=100,!color=#ff0000]:0.055296,(CE8_22_Dendroctonus_fasDMPC14951386_translate1_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.001915,CE8_24_Dendroctonus_fasDMPC14952115_translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.247879)[&label=100,!color=#ff0000]:0.048877)[&label=100,!color=#ff0000]:0.442721,(((AEE62813_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:2.0E-6,(CE8_17_Dendroctonus_fasDMPC14944558_translate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.003275,CE8_8_Dendroctonus_fasDMPC14622560_translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.117733)[&label=66,!color=#ff0000]:2.0E-6)[&label=100,!color=#ff0000]:0.025461,CE8_7_Dendroctonus_fasDMPC14622305_translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.005847)[&label=100,!color=#ff0000]:0.273774,CE8_5_Curculio_fasC159767_a30l1332revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.218535)[&label=44,!color=#ff0000]:0.014133)[&label=33,!color=#ff0000]:0.054714,(CE8_15_Dendroctonus_fasDMPC14942077_translate1_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.29114,CE8_35_Larinus_fasC139731_a170l1123revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.291034)[&label=20,!color=#ff0000]:0.045554)[&label=13,!color=#ff0000]:0.028073,CE8_41_Nedyus_fasC90050_a280l793revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.32102)[&label=17,!color=#ff0000]:0.027857,CE8_25_Diaprepes_fasC147139_a50l573revcomptranslate1_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.288521)[&label=24,!color=#ff0000]:0.048317,CE8_34_Larinus_fasC138281_a30l1041translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.516878)[&label=94,!color=#ff0000]:0.181244)[&label=100,!color=#ff0000]:0.391645)[&label=34,!color=#000000]:0.126,(((((AEE62090_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.0,ERL89375_Dendroctonus_ponderosae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.0)[&label=32,!color=#ff0000]:2.0E-6,CE8_14_Dendroctonus_fasDMPC14940711_translate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:2.0E-6)[&label=100,!color=#ff0000]:0.2402,CE8_30_Ips_fasC46405_a270l1347revcomptranslate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.247521)[&label=33,!color=#ff0000]:0.060823,(CE8_26_Diaprepes_fasC166024_a60l1073revcomptranslate1_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.292153,CE8_4_Curculio_fasC158725_a600l1245revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.349659)[&label=23,!color=#ff0000]:0.054531)[&label=40,!color=#ff0000]:0.066962,((CE8_42_Nedyus_fasC92372_a290l893translate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.182579,CE8_43_Nedyus_fasC97084_a630l1170revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.135796)[&label=56,!color=#ff0000]:0.08306,CE8_44_Nedyus_fasC97788_a1020l1230translate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.150762)[&label=97,!color=#ff0000]:0.1113)[&label=98,!color=#ff0000]:0.258606)[&label=22,!color=#000000]:0.040594,(((ADU33260_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.02562,CE8_57_Sitophilus_fass13240_L591060a639l1133translate2_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.015952)[&label=100,!color=#ff0000]:0.167706,AMK48575_Rhynchophorus_ferrugineus_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.247276)[&label=94,!color=#ff0000]:0.141201,(ADU33261_Sitophilus_oryzae_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.020562,CE8_56_Sitophilus_fass12980_L574350a272l966revcomptranslate3_Current_Insecta_Coleoptera_Curculionidae[&!color=#ff0000]:0.032617)[&label=100,!color=#ff0000]:0.716909)[&label=74,!color=#ff0000]:0.114004)[&label=100,!color=#000000]:1.136943,(ACO54875_Phytophthora_capsici_Oomycota[&!color=#0000ff]:1.053181,(AXH37591_Aspergillus_niger_Fungi[&!color=#0000ff]:0.842713,GAT23939_Aspergillus_luchuensis_Fungi[&!color=#0000ff]:1.785824)[&label=54,!color=#0000ff]:0.104246)[&label=84,!color=#0000ff]:0.306882)[&label=17]:0.192863)[&label=100,!color=#00ff00]:0.534695,CAB58974_Arabidopsis_thaliana_Plantae[&!color=#00ff00]:0.651343)[&label=50,!color=#00ff00]:0.232311,AAX13972_Nicotiana_tabacum_Plantae[&!color=#00ff00]:0.589468)[&label=33,!color=#00ff00]:0.092288,BAA89480_Salix_gilgiana_Plantae[&!color=#00ff00]:0.590602)[&label=62,!color=#00ff00]:0.199461,AFI23414_Coffea_arabica_Plantae[&!color=#00ff00]:0.718895)[&label=37,!color=#00ff00]:0.077117,(((ACQ85264_Musa_acuminata_Plantae[&!color=#00ff00]:0.249616,AHB84678_Citrus_reticulata_Plantae[&!color=#00ff00]:0.288169)[&label=100,!color=#00ff00]:0.315225,(((AFB77929_Gossypium_hirsutum_Plantae[&!color=#00ff00]:0.051545,AFQ23194_Theobroma_cacao_Plantae[&!color=#00ff00]:0.05829)[&label=96,!color=#00ff00]:0.070801,AJH66132_Malus_domestica_Plantae[&!color=#00ff00]:0.141439)[&label=75,!color=#00ff00]:0.063811,CAE766332_Cicer_arietinum_Plantae[&!color=#00ff00]:0.188637)[&label=100,!color=#00ff00]:0.311601)[&label=58,!color=#00ff00]:0.113346,BBC20168_Chamaecyparis_obtusa_Plantae[&!color=#00ff00]:0.586095)[&label=30,!color=#00ff00]:0.071571)[&label=100,!color=#00ff00]:0.405206,AFC98398_Lepidium_sativum_Plantae[&!color=#00ff00]:0.35642)[&label=85,!color=#00ff00]:0.133846)[&label=100,!color=#00ff00]:0.429954);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=4.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=386;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=109;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute="User selection";
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="decreasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
