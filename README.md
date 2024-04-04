@@ -3,7 +3,7 @@ This repository contains scripts used for data processing, analysis and generati
 
 The <b>analysis</b> folder includes outputs of main analysis done in this paper.
 
-The <b>bash.scripts</b> folder includes all scripts used to analyse data in the High Performance computing Cluster at the University of Memphis. These scripts are modified to 
+The <b>bash.scripts</b> folder includes all scripts used to analyse data in the High Performance computing Cluster at the University of Memphis.
 
 The <b>data</b> folder includes raw data used for analysis.
 
