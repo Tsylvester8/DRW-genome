@@ -1,0 +1,16 @@
+#                                                                                  --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name              accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#      ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+ptg000044l:1434342-1437607 -            344 66138at33392         -            259   3.6e-98  328.3   5.3   1   1   2.1e-99   1.9e-95  319.4   5.3     7   255    34   337    30   343 0.83 -
+ptg000062l:5011719-5013967 -            275 66138at33392         -            259   8.8e-26   91.1   0.0   1   2   2.1e-29   1.9e-25   89.9   0.0    30   175    29   189    18   195 0.81 -
+ptg000062l:5011719-5013967 -            275 66138at33392         -            259   8.8e-26   91.1   0.0   2   2      0.47   4.4e+03   -3.0   0.0   228   253   227   255   225   256 0.75 -
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/66138at33392.hmm
+# Target file:     /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas
+# Option settings: hmmsearch --domtblout /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/hmmer_output/initial_run_results/66138at33392.out --cpu 1 /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/66138at33392.hmm /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas 
+# Current dir:     /home/tpsylvst/projects/diaprepes_assembly/busco
+# Date:            Mon Nov 28 14:23:09 2022
+# [ok]

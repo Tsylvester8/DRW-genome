@@ -1,0 +1,34 @@
+#                                                                                    --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#        ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+ptg000150l:745044-749561     -            689 59601at33392         -            440  5.5e-168  559.1   3.0   1   2  1.4e-114  2.3e-111  372.5   2.5     9   267   136   435   129   464 0.82 -
+ptg000150l:745044-749561     -            689 59601at33392         -            440  5.5e-168  559.1   3.0   2   2   5.9e-55   9.9e-52  176.0   0.0   278   440   494   687   475   687 0.86 -
+ptg000467l:349046-349939     -            298 59601at33392         -            440   3.5e-08   32.5   0.6   1   2   1.2e-05      0.02   13.5   0.1    90   157     4    73     1    90 0.74 -
+ptg000467l:349046-349939     -            298 59601at33392         -            440   3.5e-08   32.5   0.6   2   2   6.4e-07    0.0011   17.7   0.0   189   239   130   180   101   200 0.81 -
+ptg000062l:12417721-12419978 -            644 59601at33392         -            440   2.5e-05   23.0   0.1   1   2   4.3e-08   7.2e-05   21.5   0.0    91   216   213   344   205   357 0.74 -
+ptg000062l:12417721-12419978 -            644 59601at33392         -            440   2.5e-05   23.0   0.1   2   2      0.55   9.2e+02   -1.9   0.0   106   151   361   408   349   418 0.66 -
+ptg000296l:6045091-6045693   -            201 59601at33392         -            440    0.0001   21.0   0.1   1   1   1.1e-07   0.00019   20.1   0.1   123   218    40   144     5   154 0.70 -
+ptg000061l:4367429-4385070   -            208 59601at33392         -            440    0.0041   15.8   0.0   1   2     0.013        23    3.4   0.0   189   214    10    35     1    55 0.83 -
+ptg000061l:4367429-4385070   -            208 59601at33392         -            440    0.0041   15.8   0.0   2   2   9.7e-05      0.16   10.5   0.0   129   182   119   171   114   183 0.87 -
+ptg000080l:25794107-25794727 -            120 59601at33392         -            440    0.0063   15.1   0.0   1   1     4e-06    0.0068   15.0   0.0    87   173    29   119     8   120 0.80 -
+ptg000081l:1349511-1402625   -            108 59601at33392         -            440      0.03   12.9   0.2   1   2    0.0081        14    4.1   0.0   189   213     3    27     1    53 0.77 -
+ptg000081l:1349511-1402625   -            108 59601at33392         -            440      0.03   12.9   0.2   2   2   0.00052      0.88    8.1   0.0   118   140    79   102    26   106 0.65 -
+ptg000088l:7403879-7594287   -            138 59601at33392         -            440     0.033   12.8   0.1   1   2     0.002       3.4    6.1   0.0   190   215     2    27     1    36 0.86 -
+ptg000088l:7403879-7594287   -            138 59601at33392         -            440     0.033   12.8   0.1   2   2    0.0023       3.9    5.9   0.1    98   163    47   115    24   137 0.65 -
+ptg000240l:3876235-3912561   -            654 59601at33392         -            440     0.039   12.5   0.3   1   3      0.73   1.2e+03   -2.3   0.0   188   212    12    36     4    43 0.81 -
+ptg000240l:3876235-3912561   -            654 59601at33392         -            440     0.039   12.5   0.3   2   3   9.3e-05      0.16   10.5   0.1    95   177    77   165    62   187 0.68 -
+ptg000240l:3876235-3912561   -            654 59601at33392         -            440     0.039   12.5   0.3   3   3       1.4   2.4e+03   -3.3   0.0   189   207   425   443   413   446 0.75 -
+ptg000024l:21577175-21577720 -            182 59601at33392         -            440      0.05   12.2   0.4   1   2      0.38   6.4e+02   -1.4   0.0   189   212     8    31     5    42 0.81 -
+ptg000024l:21577175-21577720 -            182 59601at33392         -            440      0.05   12.2   0.4   2   2   5.5e-05     0.094   11.3   0.2   108   173    91   156    41   176 0.71 -
+ptg000393l:903822-904790     -            323 59601at33392         -            440      0.24    9.9  10.1   1   2   3.3e-05     0.056   12.0   1.6     5    83    81   159    75   168 0.92 -
+ptg000393l:903822-904790     -            323 59601at33392         -            440      0.24    9.9  10.1   2   2     0.031        53    2.2   1.6     5    81   174   249   170   262 0.84 -
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/59601at33392.hmm
+# Target file:     /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas
+# Option settings: hmmsearch --domtblout /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/hmmer_output/initial_run_results/59601at33392.out --cpu 1 /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/59601at33392.hmm /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas 
+# Current dir:     /home/tpsylvst/projects/diaprepes_assembly/busco
+# Date:            Mon Nov 28 14:23:15 2022
+# [ok]

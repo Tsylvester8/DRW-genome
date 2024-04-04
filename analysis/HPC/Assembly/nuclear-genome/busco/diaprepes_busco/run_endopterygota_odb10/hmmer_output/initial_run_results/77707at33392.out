@@ -1,0 +1,28 @@
+#                                                                                  --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name              accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#      ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+ptg000281l:3834720-3853551 -            457 77707at33392         -            326  1.9e-184  612.2   3.9   1   1  1.4e-187  2.8e-184  611.6   3.9     1   308    71   396    71   424 0.94 -
+ptg000658l:1378781-1397565 -            457 77707at33392         -            326  1.9e-184  612.2   3.9   1   1  1.4e-187  2.8e-184  611.6   3.9     1   308    71   396    71   424 0.94 -
+ptg000467l:580613-624719   -            307 77707at33392         -            326   5.1e-26   91.5   0.1   1   1   3.5e-29   7.2e-26   91.0   0.1    93   248     9   172     3   181 0.82 -
+ptg000617l:595813-612169   -            550 77707at33392         -            326     0.011   14.8   0.9   1   2   0.00013      0.28   10.3   0.3   130   159    74   103    66   109 0.89 -
+ptg000617l:595813-612169   -            550 77707at33392         -            326     0.011   14.8   0.9   2   2     0.031        65    2.5   0.0   130   152   181   203   174   211 0.91 -
+ptg000186l:1123733-1133771 -            563 77707at33392         -            326     0.013   14.6   0.9   1   2   0.00014      0.28   10.2   0.3   130   159    41    70    33    76 0.89 -
+ptg000186l:1123733-1133771 -            563 77707at33392         -            326     0.013   14.6   0.9   2   2     0.032        67    2.4   0.0   130   152   148   170   141   178 0.91 -
+ptg000296l:3361697-3361840 -             48 77707at33392         -            326     0.023   13.8   0.1   1   1   1.1e-05     0.024   13.8   0.1   130   152    15    37     5    42 0.88 -
+ptg000478l:502466-502609   -             48 77707at33392         -            326     0.023   13.8   0.1   1   1   1.1e-05     0.024   13.8   0.1   130   152    15    37     5    42 0.88 -
+ptg000039l:2386293-2428739 -            509 77707at33392         -            326     0.031   13.4   2.2   1   3     0.017        36    3.3   0.0   128   159   114   145   109   151 0.88 -
+ptg000039l:2386293-2428739 -            509 77707at33392         -            326     0.031   13.4   2.2   2   3   0.00079       1.6    7.7   0.4   128   154   194   220   182   228 0.91 -
+ptg000039l:2386293-2428739 -            509 77707at33392         -            326     0.031   13.4   2.2   3   3      0.35   7.2e+02   -1.0   0.0   129   155   417   443   400   487 0.81 -
+ptg000500l:252373-302992   -            509 77707at33392         -            326     0.031   13.4   2.2   1   3     0.017        36    3.3   0.0   128   159   114   145   109   151 0.88 -
+ptg000500l:252373-302992   -            509 77707at33392         -            326     0.031   13.4   2.2   2   3   0.00079       1.6    7.7   0.4   128   154   194   220   182   228 0.91 -
+ptg000500l:252373-302992   -            509 77707at33392         -            326     0.031   13.4   2.2   3   3      0.35   7.2e+02   -1.0   0.0   129   155   417   443   400   487 0.81 -
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/77707at33392.hmm
+# Target file:     /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas
+# Option settings: hmmsearch --domtblout /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/hmmer_output/initial_run_results/77707at33392.out --cpu 1 /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/77707at33392.hmm /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas 
+# Current dir:     /home/tpsylvst/projects/diaprepes_assembly/busco
+# Date:            Mon Nov 28 14:23:20 2022
+# [ok]

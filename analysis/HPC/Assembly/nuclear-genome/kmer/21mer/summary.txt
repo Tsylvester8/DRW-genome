@@ -1,0 +1,14 @@
+GenomeScope version 2.0
+input file = .\21mer.reads.histo
+output directory = .\
+p = 2
+k = 21
+
+property                      min               max               
+Homozygous (aa)               98.3233%          98.5114%          
+Heterozygous (ab)             1.48857%          1.67665%          
+Genome Haploid Length         1,309,683,626 bp  1,320,152,107 bp  
+Genome Repeat Length          540,224,618 bp    544,542,708 bp    
+Genome Unique Length          769,459,008 bp    775,609,399 bp    
+Model Fit                     65.3666%          99.1394%          
+Read Error Rate               0.248312%         0.248312%         

@@ -1,0 +1,25 @@
+#                                                                                    --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#        ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+ptg000265l:14204412-14231453 -           1281 8137at33392          -            724  8.2e-193  642.5  69.6   1   5   2.9e-07   0.00076   17.8   0.1     2    36     6    41     5    45 0.88 -
+ptg000265l:14204412-14231453 -           1281 8137at33392          -            724  8.2e-193  642.5  69.6   2   5   6.8e-59   1.8e-55  188.5   8.5    53   353   250   609   229   611 0.77 -
+ptg000265l:14204412-14231453 -           1281 8137at33392          -            724  8.2e-193  642.5  69.6   3   5     0.012        31    2.6  15.6   292   382   589   679   577   704 0.72 -
+ptg000265l:14204412-14231453 -           1281 8137at33392          -            724  8.2e-193  642.5  69.6   4   5       0.2   5.2e+02   -1.5   4.4   309   394   760   846   725   867 0.65 -
+ptg000265l:14204412-14231453 -           1281 8137at33392          -            724  8.2e-193  642.5  69.6   5   5  1.9e-138  5.1e-135  451.4  21.3   393   723   921  1275   877  1276 0.92 -
+ptg000170l:11618048-11620546 -            833 8137at33392          -            724   2.9e-34  118.4  14.9   1   2     3e-14   7.8e-11   40.9   0.5   172   271   340   445   183   451 0.84 -
+ptg000170l:11618048-11620546 -            833 8137at33392          -            724   2.9e-34  118.4  14.9   2   2   3.6e-26   9.6e-23   80.3   8.2   430   659   493   730   483   753 0.85 -
+ptg000538l:872699-897064     -            450 8137at33392          -            724     0.081   11.1   7.1   1   1   4.5e-05      0.12   10.6   7.1   319   384   128   194    79   209 0.80 -
+ptg000096l:779914-801294     -            450 8137at33392          -            724       0.1   10.8   7.5   1   1   5.6e-05      0.15   10.2   7.5   319   384   128   194    78   209 0.79 -
+ptg000083l:6480542-6482463   -            223 8137at33392          -            724      0.85    7.7   9.6   1   1   0.00044       1.2    7.3   9.6   295   386   121   213   101   220 0.80 -
+ptg000207l:493627-503164     -            422 8137at33392          -            724       2.3    6.3   9.7   1   1    0.0012       3.2    5.8   9.7   274   387   106   225   102   248 0.77 -
+ptg000467l:642288-646524     -            301 8137at33392          -            724       6.4    4.8   9.9   1   1    0.0031       8.3    4.5   9.9   297   387    86   170    73   214 0.73 -
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/8137at33392.hmm
+# Target file:     /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas
+# Option settings: hmmsearch --domtblout /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/hmmer_output/initial_run_results/8137at33392.out --cpu 1 /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/8137at33392.hmm /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas 
+# Current dir:     /home/tpsylvst/projects/diaprepes_assembly/busco
+# Date:            Mon Nov 28 14:23:31 2022
+# [ok]

@@ -1,0 +1,1148 @@
+08/02/2023 10:47:41:259 Welcome to InterProScan-5.60-92.0
+08/02/2023 10:47:41:260 Running InterProScan v5 in STANDALONE mode... on Linux
+08/02/2023 10:47:45:781 RunID: c045_20230208_104745343_el8k
+08/02/2023 10:47:54:786 Loading file /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/Dab-BRAKER2-protein-seq.fasta
+08/02/2023 10:47:54:788 Running the following analyses:
+[AntiFam-7.0,CDD-3.20,Coils-2.2.1,FunFam-4.3.0,Gene3D-4.3.0,Hamap-2021_04,MobiDBLite-2.0,PANTHER-17.0,Pfam-35.0,PIRSF-3.10,PIRSR-2021_05,PRINTS-42.0,ProSitePatterns-2022_01,ProSiteProfiles-2022_01,SFLD-4,SMART-7.1,SUPERFAMILY-1.75,TIGRFAM-15.0]
+Pre-calculated match lookup service DISABLED.  Please wait for match calculations to complete...
+08/02/2023 10:48:02:796 Uploaded 32450 unique sequences for analysis
+08/02/2023 11:50:22:100 25% completed
+2023-02-08 11:53:56,561 [amqEmbeddedWorkerJmsContainer-28] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000009001_000000010000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+2023-02-08 11:53:56,568 [amqEmbeddedWorkerJmsContainer-28] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000009001_000000010000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 11:53:56,578 [amqEmbeddedWorkerJmsContainer-28] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 11:53:56,636 [amqEmbeddedWorkerJmsContainer-28] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCDDRunPostBlastProcessing
+2023-02-08 11:53:57,107 [main] [uk.ac.ebi.interpro.scan.jms.master.StandaloneBlackBoxMaster:190] WARN - StepInstance 991 is being re-run following a failure.
+2023-02-08 11:56:18,430 [amqEmbeddedWorkerJmsContainer-8] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000015001_000000016000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+2023-02-08 11:56:18,431 [amqEmbeddedWorkerJmsContainer-8] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000015001_000000016000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 11:56:18,432 [amqEmbeddedWorkerJmsContainer-8] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 11:56:18,433 [amqEmbeddedWorkerJmsContainer-8] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCDDRunPostBlastProcessing
+2023-02-08 11:56:18,665 [main] [uk.ac.ebi.interpro.scan.jms.master.StandaloneBlackBoxMaster:190] WARN - StepInstance 1143 is being re-run following a failure.
+2023-02-08 12:08:23,665 [amqEmbeddedWorkerJmsContainer-33] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000022001_000000023000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+2023-02-08 12:08:23,666 [amqEmbeddedWorkerJmsContainer-33] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000022001_000000023000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:08:23,667 [amqEmbeddedWorkerJmsContainer-33] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:08:23,667 [amqEmbeddedWorkerJmsContainer-33] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCDDRunPostBlastProcessing
+2023-02-08 12:08:23,937 [main] [uk.ac.ebi.interpro.scan.jms.master.StandaloneBlackBoxMaster:190] WARN - StepInstance 1001 is being re-run following a failure.
+2023-02-08 12:08:49,022 [amqEmbeddedWorkerJmsContainer-22] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000009001_000000010000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+2023-02-08 12:08:49,023 [amqEmbeddedWorkerJmsContainer-22] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000009001_000000010000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:08:49,023 [amqEmbeddedWorkerJmsContainer-22] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:08:49,024 [amqEmbeddedWorkerJmsContainer-22] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCDDRunPostBlastProcessing
+2023-02-08 12:08:49,345 [main] [uk.ac.ebi.interpro.scan.jms.master.StandaloneBlackBoxMaster:190] WARN - StepInstance 991 is being re-run following a failure.
+2023-02-08 12:08:56,514 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000015001_000000016000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+2023-02-08 12:08:56,514 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000015001_000000016000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:08:56,515 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:08:56,515 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCDDRunPostBlastProcessing
+2023-02-08 12:08:56,739 [main] [uk.ac.ebi.interpro.scan.jms.master.StandaloneBlackBoxMaster:190] WARN - StepInstance 1143 is being re-run following a failure.
+2023-02-08 12:09:24,740 [amqEmbeddedWorkerJmsContainer-9] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000014001_000000015000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+2023-02-08 12:09:24,741 [amqEmbeddedWorkerJmsContainer-9] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000014001_000000015000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:09:24,742 [amqEmbeddedWorkerJmsContainer-9] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:09:24,742 [amqEmbeddedWorkerJmsContainer-9] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCDDRunPostBlastProcessing
+2023-02-08 12:09:24,969 [main] [uk.ac.ebi.interpro.scan.jms.master.StandaloneBlackBoxMaster:190] WARN - StepInstance 1299 is being re-run following a failure.
+2023-02-08 12:10:14,278 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000022001_000000023000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+2023-02-08 12:10:14,278 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000022001_000000023000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:10:14,279 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:14,280 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCDDRunPostBlastProcessing
+2023-02-08 12:10:14,511 [main] [uk.ac.ebi.interpro.scan.jms.master.StandaloneBlackBoxMaster:190] WARN - StepInstance 1001 is being re-run following a failure.
+2023-02-08 12:10:28,322 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000015001_000000016000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+2023-02-08 12:10:28,322 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000015001_000000016000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:10:28,323 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:28,323 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCDDRunPostBlastProcessing
+2023-02-08 12:10:28,524 [main] [uk.ac.ebi.interpro.scan.jms.activemq.NonZeroExitOnUnrecoverableError:25] FATAL - Analysis step 1143 : Run CDD Binary rpsbproc. for selected proteins for proteins 15001 to 16000 has failed irretrievably.  Available StackTraces follow.
+2023-02-08 12:10:28,524 [main] [uk.ac.ebi.interpro.scan.jms.activemq.NonZeroExitOnUnrecoverableError:42] FATAL - The JVM will now exit with a non-zero exit status.
+2023-02-08 12:10:28,524 [main] [uk.ac.ebi.interpro.scan.jms.master.StandaloneBlackBoxMaster:363] ERROR - Exception thrown by StandaloneBlackBoxMaster: 
+java.lang.IllegalStateException: InterProScan exiting with non-zero status, see logs for further information.
+	at uk.ac.ebi.interpro.scan.jms.activemq.NonZeroExitOnUnrecoverableError.failed(NonZeroExitOnUnrecoverableError.java:43) ~[interproscan-5.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.master.StandaloneBlackBoxMaster.run(StandaloneBlackBoxMaster.java:169) [interproscan-5.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.main.Run.main(Run.java:413) [interproscan-5.jar:?]
+12:10:33.933 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+2023-02-08 12:10:41,878 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: python3 bin/gene3d/4.3.0/assign_cath_superfamilies.py data/gene3d/4.3.0/model_to_family_map.tsv data/gene3d/4.3.0/discontinuous_regs.pkl.py3 /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobFunFam/000000020001_000000024000_one.raw.out /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobFunFam/000000020001_000000024000_two.raw.out 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/gene3d/4.3.0/assign_cath_superfamilies.py", line 90, in <module>
+    else: ifh = open(infile)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobFunFam/000000020001_000000024000_one.raw.out'
+
+2023-02-08 12:10:41,878 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: python3 bin/gene3d/4.3.0/assign_cath_superfamilies.py data/gene3d/4.3.0/model_to_family_map.tsv data/gene3d/4.3.0/discontinuous_regs.pkl.py3 /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobFunFam/000000020001_000000024000_one.raw.out /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobFunFam/000000020001_000000024000_two.raw.out 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/gene3d/4.3.0/assign_cath_superfamilies.py", line 90, in <module>
+    else: ifh = open(infile)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobFunFam/000000020001_000000024000_one.raw.out'
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:10:41,879 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:41,879 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCathFunFamRunAssignCathFamiliesStep
+12:10:41.882 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:41.919 [amqEmbeddedWorkerJmsContainer-21] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "PROTEIN" not found; SQL statement:
+select protein0_.id as id1_83_, protein0_.md5 as md2_83_, protein0_.sequence_first_chunk as sequence3_83_ from public.protein protein0_ where protein0_.id in (? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ?) [42102-199]
+2023-02-08 12:10:41,919 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1538) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at uk.ac.ebi.interpro.scan.persistence.FilteredMatchDAOImpl.getProteinIdToProteinMap(FilteredMatchDAOImpl.java:278) ~[interproscan-persistence-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.persistence.FilteredMatchDAOImpl.persist(FilteredMatchDAOImpl.java:117) ~[interproscan-persistence-5.60-92.0.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy101.persist(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.management.model.implementations.superfamily.ParseAndPersistSuperFamilyOutputStep.execute(ParseAndPersistSuperFamilyOutputStep.java:114) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:182) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:148) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1990) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1920) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1898) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:937) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:340) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2695) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2678) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2512) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2507) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:504) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:224) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1538) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1561) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1529) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	... 38 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PROTEIN" not found; SQL statement:
+select protein0_.id as id1_83_, protein0_.md5 as md2_83_, protein0_.sequence_first_chunk as sequence3_83_ from public.protein protein0_ where protein0_.id in (? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ?) [42102-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7146) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.readTableFilter(Parser.java:1895) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2641) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2636) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2469) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelect(Parser.java:2440) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parsePrepared(Parser.java:814) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:760) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.prepareCommand(Parser.java:683) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareLocal(Session.java:627) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareCommand(Session.java:565) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349) ~[h2-1.4.199.jar:1.4.199]
+	at jdk.internal.reflect.GeneratedMethodAccessor63.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy$LazyConnectionInvocationHandler.invoke(LazyConnectionDataSourceProxy.java:385) ~[spring-jdbc-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy30.prepareStatement(Unknown Source) ~[?:?]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:146) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:172) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:148) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1990) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1920) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1898) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:937) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:340) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2695) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2678) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2512) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2507) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:504) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:224) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1538) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1561) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1529) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	... 38 more
+2023-02-08 12:10:41,921 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:41,922 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepSuperFamilyParseAndPersistOutput
+12:10:41.925 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:41.936 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:41.940 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+2023-02-08 12:10:42,899 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: python3 bin/panther/treegrafter.py run /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000.fasta /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000.raw.out data/panther/17.0/ -o /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000_one.raw.out --epa-ng bin/panther/epa-ng -T /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000.tg -e 0.00000001 --keep 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 614, in <module>
+    main()
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 610, in main
+    func(args)
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 558, in run
+    results = process_matches_epang(matches, args.datadir, tempdir,
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 32, in process_matches_epang
+    query_fasta_file = generate_fasta_for_panthr(pthr, matches[pthr],
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 91, in generate_fasta_for_panthr
+    with open(fasta_out_file, 'wt') as outfile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000.tg/tmpnkccmtk8/PTHR10972_query.fasta'
+
+2023-02-08 12:10:42,899 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: python3 bin/panther/treegrafter.py run /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000.fasta /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000.raw.out data/panther/17.0/ -o /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000_one.raw.out --epa-ng bin/panther/epa-ng -T /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000.tg -e 0.00000001 --keep 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 614, in <module>
+    main()
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 610, in main
+    func(args)
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 558, in run
+    results = process_matches_epang(matches, args.datadir, tempdir,
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 32, in process_matches_epang
+    query_fasta_file = generate_fasta_for_panthr(pthr, matches[pthr],
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 91, in generate_fasta_for_panthr
+    with open(fasta_out_file, 'wt') as outfile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000029501_000000030000.tg/tmpnkccmtk8/PTHR10972_query.fasta'
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:10:42,899 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:42,900 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepPantherRunBinary
+12:10:42.902 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:42.904 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:42.908 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:44.481 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:44.482 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:44.484 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:47.975 [amqEmbeddedWorkerJmsContainer-11] ERROR org.hibernate.id.enhanced.TableGenerator - HHH000351: Could not read or init a hi value
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "KEY_GEN" not found; SQL statement:
+select tbl.next_val from public.key_gen tbl where tbl.sequence_name=? [42102-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7146) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.readTableFilter(Parser.java:1895) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2641) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2636) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2469) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelect(Parser.java:2440) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parsePrepared(Parser.java:814) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:760) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.prepareCommand(Parser.java:683) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareLocal(Session.java:627) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareCommand(Session.java:565) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349) ~[h2-1.4.199.jar:1.4.199]
+	at jdk.internal.reflect.GeneratedMethodAccessor63.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy$LazyConnectionInvocationHandler.invoke(LazyConnectionDataSourceProxy.java:385) ~[spring-jdbc-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy30.prepareStatement(Unknown Source) ~[?:?]
+	at org.hibernate.id.enhanced.TableGenerator.prepareStatement(TableGenerator.java:684) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator.access$200(TableGenerator.java:132) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator$1$1.execute(TableGenerator.java:582) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator$1$1.execute(TableGenerator.java:575) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.jdbc.WorkExecutor.executeReturningWork(WorkExecutor.java:55) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.jdbc.AbstractReturningWork.accept(AbstractReturningWork.java:34) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:57) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator$1.getNextValue(TableGenerator.java:574) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.PooledOptimizer.generate(PooledOptimizer.java:93) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator.generate(TableGenerator.java:570) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:119) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:62) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:804) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:789) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314) ~[spring-orm-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy75.persist(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.genericjpadao.GenericDAOImpl.insert(GenericDAOImpl.java:128) ~[generic-jpa-dao-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.persistence.raw.RawMatchDAOImpl.insertProteinMatches(RawMatchDAOImpl.java:37) ~[interproscan-persistence-5.60-92.0.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy91.insertProteinMatches(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.management.model.implementations.ParseStep.execute(ParseStep.java:128) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) [spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) [spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) [spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) [?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+12:10:47.976 [amqEmbeddedWorkerJmsContainer-11] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "KEY_GEN" not found; SQL statement:
+select tbl.next_val from public.key_gen tbl where tbl.sequence_name=? [42102-199]
+2023-02-08 12:10:47,977 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: error performing isolated work
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:811) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:789) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314) ~[spring-orm-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy75.persist(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.genericjpadao.GenericDAOImpl.insert(GenericDAOImpl.java:128) ~[generic-jpa-dao-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.persistence.raw.RawMatchDAOImpl.insertProteinMatches(RawMatchDAOImpl.java:37) ~[interproscan-persistence-5.60-92.0.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy91.insertProteinMatches(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.management.model.implementations.ParseStep.execute(ParseStep.java:128) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: org.hibernate.exception.SQLGrammarException: error performing isolated work
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:79) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator$1.getNextValue(TableGenerator.java:574) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.PooledOptimizer.generate(PooledOptimizer.java:93) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator.generate(TableGenerator.java:570) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:119) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:62) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:804) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	... 43 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "KEY_GEN" not found; SQL statement:
+select tbl.next_val from public.key_gen tbl where tbl.sequence_name=? [42102-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7146) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.readTableFilter(Parser.java:1895) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2641) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2636) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2469) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelect(Parser.java:2440) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parsePrepared(Parser.java:814) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:760) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.prepareCommand(Parser.java:683) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareLocal(Session.java:627) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareCommand(Session.java:565) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349) ~[h2-1.4.199.jar:1.4.199]
+	at jdk.internal.reflect.GeneratedMethodAccessor63.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy$LazyConnectionInvocationHandler.invoke(LazyConnectionDataSourceProxy.java:385) ~[spring-jdbc-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy30.prepareStatement(Unknown Source) ~[?:?]
+	at org.hibernate.id.enhanced.TableGenerator.prepareStatement(TableGenerator.java:684) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator.access$200(TableGenerator.java:132) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator$1$1.execute(TableGenerator.java:582) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator$1$1.execute(TableGenerator.java:575) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.jdbc.WorkExecutor.executeReturningWork(WorkExecutor.java:55) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.jdbc.AbstractReturningWork.accept(AbstractReturningWork.java:34) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:57) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator$1.getNextValue(TableGenerator.java:574) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.PooledOptimizer.generate(PooledOptimizer.java:93) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.id.enhanced.TableGenerator.generate(TableGenerator.java:570) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:119) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:62) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:804) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	... 43 more
+2023-02-08 12:10:47,978 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:47,979 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepPrositePatternParseRawOutput
+12:10:47.982 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:47.983 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:47.991 [amqEmbeddedWorkerJmsContainer-11] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "SMART_RAW_MATCH" not found; SQL statement:
+select smartrawma0_.id as id1_86_, smartrawma0_.loc_fragment_dcs_tatus as loc_frag2_86_, smartrawma0_.location_end as location3_86_, smartrawma0_.location_start as location4_86_, smartrawma0_.model_id as model_id5_86_, smartrawma0_.numeric_sequence_id as numeric_6_86_, smartrawma0_.sequence_id as sequence7_86_, smartrawma0_.signature_library as signatur8_86_, smartrawma0_.sig_lib_release as sig_lib_9_86_, smartrawma0_.evalue as evalue1_41_, smartrawma0_.hmm_bounds as hmm_boun2_41_, smartrawma0_.hmm_end as hmm_end3_41_, smartrawma0_.hmm_start as hmm_star4_41_, smartrawma0_.location_score as location5_41_, smartrawma0_.score as score6_41_, smartrawma0_.location_evalue as location1_26_ from public.smart_raw_match smartrawma0_ where smartrawma0_.numeric_sequence_id>=? and smartrawma0_.numeric_sequence_id<=? and smartrawma0_.sig_lib_release=? [42102-199]
+2023-02-08 12:10:47,992 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1538) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at uk.ac.ebi.interpro.scan.persistence.raw.SmartHmmer2RawMatchDAOImpl.getRawMatchesForProteinIdsInRange(SmartHmmer2RawMatchDAOImpl.java:57) ~[interproscan-persistence-5.60-92.0.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy100.getRawMatchesForProteinIdsInRange(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.management.model.implementations.smart.SmartPostProcessingStep.execute(SmartPostProcessingStep.java:81) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:182) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:148) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1990) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1920) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1898) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:937) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:340) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2695) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2678) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2512) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2507) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:504) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:224) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1538) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1561) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1529) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	... 37 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SMART_RAW_MATCH" not found; SQL statement:
+select smartrawma0_.id as id1_86_, smartrawma0_.loc_fragment_dcs_tatus as loc_frag2_86_, smartrawma0_.location_end as location3_86_, smartrawma0_.location_start as location4_86_, smartrawma0_.model_id as model_id5_86_, smartrawma0_.numeric_sequence_id as numeric_6_86_, smartrawma0_.sequence_id as sequence7_86_, smartrawma0_.signature_library as signatur8_86_, smartrawma0_.sig_lib_release as sig_lib_9_86_, smartrawma0_.evalue as evalue1_41_, smartrawma0_.hmm_bounds as hmm_boun2_41_, smartrawma0_.hmm_end as hmm_end3_41_, smartrawma0_.hmm_start as hmm_star4_41_, smartrawma0_.location_score as location5_41_, smartrawma0_.score as score6_41_, smartrawma0_.location_evalue as location1_26_ from public.smart_raw_match smartrawma0_ where smartrawma0_.numeric_sequence_id>=? and smartrawma0_.numeric_sequence_id<=? and smartrawma0_.sig_lib_release=? [42102-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7146) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.readTableFilter(Parser.java:1895) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2641) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2636) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2469) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parseSelect(Parser.java:2440) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parsePrepared(Parser.java:814) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:788) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.parse(Parser.java:760) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.command.Parser.prepareCommand(Parser.java:683) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareLocal(Session.java:627) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.engine.Session.prepareCommand(Session.java:565) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77) ~[h2-1.4.199.jar:1.4.199]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349) ~[h2-1.4.199.jar:1.4.199]
+	at jdk.internal.reflect.GeneratedMethodAccessor63.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy$LazyConnectionInvocationHandler.invoke(LazyConnectionDataSourceProxy.java:385) ~[spring-jdbc-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy30.prepareStatement(Unknown Source) ~[?:?]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:146) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:172) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:148) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1990) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1920) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1898) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:937) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:340) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2695) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2678) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2512) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2507) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:504) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:224) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1538) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1561) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1529) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	... 37 more
+2023-02-08 12:10:47,993 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:47,994 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepSmartPostProcessing
+12:10:47.997 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+2023-02-08 12:10:49,482 [amqEmbeddedWorkerJmsContainer-29] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: IOException thrown when attempting to parse /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobSMART/000000014501_000000015000.raw.out
+	at uk.ac.ebi.interpro.scan.management.model.implementations.ParseStep.execute(ParseStep.java:204) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: java.io.FileNotFoundException: /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k/jobSMART/000000014501_000000015000.raw.out (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
+	at uk.ac.ebi.interpro.scan.management.model.implementations.ParseStep.execute(ParseStep.java:100) ~[interproscan-management-5.60-92.0.jar:?]
+	... 22 more
+2023-02-08 12:10:49,483 [amqEmbeddedWorkerJmsContainer-29] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:49,483 [amqEmbeddedWorkerJmsContainer-29] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepSMARTStoreRawMatches
+12:10:49.488 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:49.504 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+2023-02-08 12:10:49,631 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: python3 bin/gene3d/4.3.0/assign_cath_superfamilies.py data/gene3d/4.3.0/model_to_family_map.tsv data/gene3d/4.3.0/discontinuous_regs.pkl.py3 /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobGene3d/000000008001_000000012000_one.raw.out /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobGene3d/000000008001_000000012000_two.raw.out 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/gene3d/4.3.0/assign_cath_superfamilies.py", line 90, in <module>
+    else: ifh = open(infile)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobGene3d/000000008001_000000012000_one.raw.out'
+
+2023-02-08 12:10:49,631 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: python3 bin/gene3d/4.3.0/assign_cath_superfamilies.py data/gene3d/4.3.0/model_to_family_map.tsv data/gene3d/4.3.0/discontinuous_regs.pkl.py3 /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobGene3d/000000008001_000000012000_one.raw.out /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobGene3d/000000008001_000000012000_two.raw.out 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/gene3d/4.3.0/assign_cath_superfamilies.py", line 90, in <module>
+    else: ifh = open(infile)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobGene3d/000000008001_000000012000_one.raw.out'
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:10:49,632 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:49,632 [amqEmbeddedWorkerJmsContainer-21] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCathGene3dRunAssignCathFamiliesStep
+12:10:49.634 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:49.635 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+2023-02-08 12:10:50,268 [amqEmbeddedWorkerJmsContainer-24] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: python3 bin/panther/treegrafter.py run /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500.fasta /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500.raw.out data/panther/17.0/ -o /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500_one.raw.out --epa-ng bin/panther/epa-ng -T /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500.tg -e 0.00000001 --keep 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 614, in <module>
+    main()
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 610, in main
+    func(args)
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 558, in run
+    results = process_matches_epang(matches, args.datadir, tempdir,
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 32, in process_matches_epang
+    query_fasta_file = generate_fasta_for_panthr(pthr, matches[pthr],
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 91, in generate_fasta_for_panthr
+    with open(fasta_out_file, 'wt') as outfile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500.tg/tmph3yezr_k/PTHR22692_query.fasta'
+
+2023-02-08 12:10:50,269 [amqEmbeddedWorkerJmsContainer-24] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: python3 bin/panther/treegrafter.py run /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500.fasta /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500.raw.out data/panther/17.0/ -o /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500_one.raw.out --epa-ng bin/panther/epa-ng -T /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500.tg -e 0.00000001 --keep 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 614, in <module>
+    main()
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 610, in main
+    func(args)
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 558, in run
+    results = process_matches_epang(matches, args.datadir, tempdir,
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 32, in process_matches_epang
+    query_fasta_file = generate_fasta_for_panthr(pthr, matches[pthr],
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 91, in generate_fasta_for_panthr
+    with open(fasta_out_file, 'wt') as outfile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000030001_000000030500.tg/tmph3yezr_k/PTHR22692_query.fasta'
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:10:50,269 [amqEmbeddedWorkerJmsContainer-24] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:50,270 [amqEmbeddedWorkerJmsContainer-24] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepPantherRunBinary
+12:10:50.271 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:51.350 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+2023-02-08 12:10:53,171 [amqEmbeddedWorkerJmsContainer-7] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: python3 bin/panther/treegrafter.py run /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000.fasta /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000.raw.out data/panther/17.0/ -o /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000_one.raw.out --epa-ng bin/panther/epa-ng -T /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000.tg -e 0.00000001 --keep 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 614, in <module>
+    main()
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 610, in main
+    func(args)
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 558, in run
+    results = process_matches_epang(matches, args.datadir, tempdir,
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 32, in process_matches_epang
+    query_fasta_file = generate_fasta_for_panthr(pthr, matches[pthr],
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 91, in generate_fasta_for_panthr
+    with open(fasta_out_file, 'wt') as outfile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000.tg/tmpmakp1j3b/PTHR11706_query.fasta'
+
+2023-02-08 12:10:53,171 [amqEmbeddedWorkerJmsContainer-7] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: python3 bin/panther/treegrafter.py run /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000.fasta /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000.raw.out data/panther/17.0/ -o /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000_one.raw.out --epa-ng bin/panther/epa-ng -T /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000.tg -e 0.00000001 --keep 
+Error output from binary:
+Traceback (most recent call last):
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 614, in <module>
+    main()
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 610, in main
+    func(args)
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 558, in run
+    results = process_matches_epang(matches, args.datadir, tempdir,
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 32, in process_matches_epang
+    query_fasta_file = generate_fasta_for_panthr(pthr, matches[pthr],
+  File "/home/scratch/tpsylvst/software/interproscan-5.60-92.0/bin/panther/treegrafter.py", line 91, in generate_fasta_for_panthr
+    with open(fasta_out_file, 'wt') as outfile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobPanther/000000025501_000000026000.tg/tmpmakp1j3b/PTHR11706_query.fasta'
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:10:53,172 [amqEmbeddedWorkerJmsContainer-7] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:53,172 [amqEmbeddedWorkerJmsContainer-7] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepPantherRunBinary
+12:10:53.174 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+2023-02-08 12:10:53,188 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep:199] ERROR - Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000014001_000000015000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+2023-02-08 12:10:53,189 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:216] ERROR - Execution thrown when attempting to executeInTransaction the StepExecution.  All database activity rolled back.
+java.lang.IllegalStateException: Command line failed with exit code: 1
+Command: bin/blast/rpsbproc -i /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k//jobCDD/000000014001_000000015000.blast.raw.out -d data/cdd/3.20/data -m std 
+Error output from binary:
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bin/blast/rpsbproc)
+bin/blast/rpsbproc: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by bin/blast/rpsbproc)
+
+	at uk.ac.ebi.interpro.scan.management.model.implementations.RunBinaryStep.execute(RunBinaryStep.java:201) ~[interproscan-management-5.60-92.0.jar:?]
+	at uk.ac.ebi.interpro.scan.jms.activemq.StepExecutionTransactionImpl.executeInTransaction(StepExecutionTransactionImpl.java:87) ~[interproscan-5.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor92.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at com.sun.proxy.$Proxy141.executeInTransaction(Unknown Source) ~[?:?]
+	at uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener.onMessage(LocalJobQueueListener.java:200) [interproscan-5.jar:?]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1186) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1176) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1073) [spring-jms-5.2.22.RELEASE.jar:5.2.22.RELEASE]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-02-08 12:10:53,189 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:218] ERROR - The exception is :
+2023-02-08 12:10:53,189 [amqEmbeddedWorkerJmsContainer-11] [uk.ac.ebi.interpro.scan.jms.worker.LocalJobQueueListener:222] ERROR - StepExecution with errors - stepName: stepCDDRunPostBlastProcessing
+12:10:53.193 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+12:10:53.194 [responseMonitorJmsContainer-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "STEP_EXECUTION" not found; SQL statement:
+select stepexecut0_.id as id1_109_0_, stepexecut0_.time_completed as time_com2_109_0_, stepexecut0_.time_created as time_cre3_109_0_, stepexecut0_.exception_first_chunk as exceptio4_109_0_, stepexecut0_.proportion_completed as proporti5_109_0_, stepexecut0_.time_started_running as time_sta6_109_0_, stepexecut0_.state as state7_109_0_, stepexecut0_.step_instance_id as step_ins9_109_0_, stepexecut0_.time_submitted as time_sub8_109_0_, exceptionc1_.step_execution_id as step_exe1_15_1_, exceptionc1_.exception_chunks as exceptio2_15_1_, exceptionc1_.chunk_index as chunk_in3_1_, stepinstan2_.id as id1_110_2_, stepinstan2_.bottom_model as bottom_m2_110_2_, stepinstan2_.bottom_protein as bottom_p3_110_2_, stepinstan2_.step_id as step_id4_110_2_, stepinstan2_.time_created as time_cre5_110_2_, stepinstan2_.top_model as top_mode6_110_2_, stepinstan2_.top_protein as top_prot7_110_2_, dependsupo3_.step_instance_id as step_ins1_112_3_, stepinstan4_.id as depends_2_112_3_, stepinstan4_.id as id1_110_4_, stepinstan4_.bottom_model as bottom_m2_110_4_, stepinstan4_.bottom_protein as bottom_p3_110_4_, stepinstan4_.step_id as step_id4_110_4_, stepinstan4_.time_created as time_cre5_110_4_, stepinstan4_.top_model as top_mode6_110_4_, stepinstan4_.top_protein as top_prot7_110_4_, parameters5_.step_instance_id as step_ins1_111_5_, parameters5_.parameters as paramete2_111_5_, parameters5_.parameters_key as paramete3_5_ from public.step_execution stepexecut0_ left outer join public.exception_chunk exceptionc1_ on stepexecut0_.id=exceptionc1_.step_execution_id inner join public.step_instance stepinstan2_ on stepexecut0_.step_instance_id=stepinstan2_.id left outer join public.step_instance_step_instance dependsupo3_ on stepinstan2_.id=dependsupo3_.step_instance_id left outer join public.step_instance stepinstan4_ on dependsupo3_.depends_upon_id=stepinstan4_.id left outer join public.step_instance_parameters parameters5_ on stepinstan4_.id=parameters5_.step_instance_id where stepexecut0_.id=? [42102-199]
+2023-02-08 12:10:54,376 [main] [uk.ac.ebi.interpro.scan.jms.master.AbstractMaster:259] WARN - Master process unable to delete temporary directory /home/scratch/tpsylvst/projects/Diaprepes-genome-assembly/3-Annotation/6-Interproscan/temp/c045_20230208_104745343_el8k

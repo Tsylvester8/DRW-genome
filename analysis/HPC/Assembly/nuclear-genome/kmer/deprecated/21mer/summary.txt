@@ -1,0 +1,14 @@
+GenomeScope version 2.0
+input file = ../../Projects/Diaprepes/Assembly/kmer/21mer.histo
+output directory = ../../Projects/Diaprepes/Assembly/kmer/21mer/
+p = 2
+k = 21
+
+property                      min               max               
+Homozygous (aa)               98.3233%          98.5114%          
+Heterozygous (ab)             1.48858%          1.67667%          
+Genome Haploid Length         1,466,264,712 bp  1,477,984,588 bp  
+Genome Repeat Length          696,841,392 bp    702,411,255 bp    
+Genome Unique Length          769,423,321 bp    775,573,333 bp    
+Model Fit                     58.0816%          99.0668%          
+Read Error Rate               0.0708994%        0.0708994%        

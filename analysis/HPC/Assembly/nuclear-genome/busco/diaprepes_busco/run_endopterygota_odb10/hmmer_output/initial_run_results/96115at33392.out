@@ -1,0 +1,35 @@
+#                                                                                    --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#        ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+ptg000025l:681090-684754     -            263 96115at33392         -            202  4.9e-102  339.7   6.2   1   2      0.15   1.3e+02    2.0   0.0     1     9    35    43    35    51 0.86 -
+ptg000025l:681090-684754     -            263 96115at33392         -            202  4.9e-102  339.7   6.2   2   2  1.2e-104  1.1e-101  338.6   3.3     8   202    62   260    59   260 0.97 -
+ptg000038l:299953-300198     -             82 96115at33392         -            202     0.011   15.3   0.0   1   1   1.2e-05     0.011   15.3   0.0    63   115    30    81     6    82 0.87 -
+ptg000587l:112697-112858     -             54 96115at33392         -            202     0.015   14.8   0.1   1   1   1.7e-05     0.015   14.8   0.1    64   114     3    52     1    54 0.84 -
+ptg000139l:409903-410148     -             82 96115at33392         -            202     0.018   14.6   0.0   1   1     2e-05     0.018   14.6   0.0    63   114    30    80     6    82 0.86 -
+ptg000159l:1750693-1750935   -             81 96115at33392         -            202     0.018   14.6   0.0   1   1     2e-05     0.018   14.6   0.0    63   114    30    80     6    81 0.86 -
+ptg000034l:1389988-1390233   -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000079l:499437-499682     -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000080l:22579615-22579860 -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000244l:6638411-6638656   -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000245l:1132444-1132689   -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000247l:3143248-3143493   -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000252l:1170740-1170985   -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000256l:2122759-2123004   -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000299l:61067-61312       -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000420l:2358370-2358615   -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000453l:6814536-6814781   -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000554l:1456036-1456281   -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000632l:322682-322927     -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000748l:233804-234049     -             82 96115at33392         -            202     0.025   14.2   0.0   1   1   2.8e-05     0.025   14.2   0.0    63   114    30    80     6    82 0.85 -
+ptg000460l:479938-480183     -             82 96115at33392         -            202     0.026   14.1   0.0   1   1     3e-05     0.026   14.1   0.0    63   114    30    80     6    82 0.85 -
+ptg000199l:1116912-1117148   -             79 96115at33392         -            202     0.027   14.0   0.0   1   1   3.1e-05     0.027   14.0   0.0    63   114    27    77    12    79 0.86 -
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/96115at33392.hmm
+# Target file:     /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas
+# Option settings: hmmsearch --domtblout /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/hmmer_output/initial_run_results/96115at33392.out --cpu 1 /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/96115at33392.hmm /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas 
+# Current dir:     /home/tpsylvst/projects/diaprepes_assembly/busco
+# Date:            Mon Nov 28 14:23:24 2022
+# [ok]

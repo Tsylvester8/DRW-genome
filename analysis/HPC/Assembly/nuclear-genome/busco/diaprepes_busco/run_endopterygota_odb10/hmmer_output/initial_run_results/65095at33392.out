@@ -1,0 +1,17 @@
+#                                                                                    --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#        ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+ptg000122l:41864477-41869798 -            398 65095at33392         -            323  3.3e-150  500.0  10.6   1   1  9.4e-154  5.8e-150  499.2  10.6     1   323     3   387     3   387 0.87 -
+ptg000147l:5923645-5950872   -            380 65095at33392         -            323    0.0018   17.8   0.1   1   1   3.9e-07    0.0024   17.3   0.1    55   189     1   135     1   147 0.90 -
+ptg000240l:3865800-3870152   -            299 65095at33392         -            323       0.7    9.2   7.7   1   2      0.14   8.4e+02   -0.9   0.0    52   104    24    76    20    91 0.70 -
+ptg000240l:3865800-3870152   -            299 65095at33392         -            323       0.7    9.2   7.7   2   2   6.4e-05      0.39   10.1   5.1   216   265   227   283    97   291 0.66 -
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/65095at33392.hmm
+# Target file:     /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas
+# Option settings: hmmsearch --domtblout /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/hmmer_output/initial_run_results/65095at33392.out --cpu 1 /home/tpsylvst/projects/diaprepes_assembly/busco/busco_downloads/lineages/endopterygota_odb10/hmms/65095at33392.hmm /home/tpsylvst/projects/diaprepes_assembly/busco/diaprepes_busco/run_endopterygota_odb10/metaeuk_output/initial_results/diaprepes.fa.modified.fas 
+# Current dir:     /home/tpsylvst/projects/diaprepes_assembly/busco
+# Date:            Mon Nov 28 14:23:11 2022
+# [ok]
